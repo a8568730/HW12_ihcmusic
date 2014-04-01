@@ -45,7 +45,7 @@ nav#uplist li a:hover, nav#uplist li a:active{
 #emailbox p{
 	background:#f7f7f7;
 	height:7%;
-	padding:30px 10px;
+	padding:50px 10px 20px;
 	border-radius:10px;
 	font-size:1.2em;
 	color:#aaa;
@@ -80,7 +80,7 @@ nav#uplist li a:hover, nav#uplist li a:active{
 	padding:5px 10px;
 	display:block;
 	border:1px solid #aaa;
-	font-size:1.111111em;
+	font-size:1.111111em;/*18px*1.111em*/
 }
 #emailbox .button#sendmsg{
 	background-image:url("../image/send-icons.png");

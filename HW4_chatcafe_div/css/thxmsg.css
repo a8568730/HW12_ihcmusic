@@ -1,0 +1,10 @@
+@import url('style.css');
+@import url('contact.css');
+
+#emailbox h5{
+	position:relative;
+	top:45%;
+	color:#aaa;
+	font-size:1.2em;
+	font-weight:100;
+}
