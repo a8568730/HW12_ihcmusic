@@ -1,0 +1,27 @@
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+
+/* typicon */
+[class*="typicon-"]:before {
+  font-family: 'typicon', sans-serif;
+}
+
+/*change color*/
+body,div#content{
+	background:url("../image/noisy-texture-100x100.png");
+}
+#wrapper>header h1{
+	/*color:#4EA087;*/
+	color:#4AB192;
+	text-shadow:1px -1px 1px #444;
+}
+nav#uplist li a{
+	color:#43d5a9;
+}
+nav#uplist li a:hover{
+	color:#FFC141;
+}
+nav#uplist li a:active{
+	color: #154984;
+}
+
+/*main*/
