@@ -1,6 +1,6 @@
  /*up*/
 form.newman{
-	position:absolute;
+	position:relative;
 	width:100%;
 	height:30%;
 	text-align:center;
@@ -34,7 +34,7 @@ form.newman{
 
 /*down*/
 #declare{
-	position:absolute;
+	position:relative;
 	width:40%;
 	height:68%;
 	left:30%;
