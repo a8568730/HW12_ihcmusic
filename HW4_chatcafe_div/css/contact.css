@@ -44,7 +44,8 @@ nav#uplist li a:hover, nav#uplist li a:active{
 }
 #emailbox p{
 	background:#f7f7f7;
-	padding:50px 10px 30px;
+	height:7%;
+	padding:30px 10px;
 	border-radius:10px;
 	font-size:1.2em;
 	color:#aaa;
@@ -81,29 +82,29 @@ nav#uplist li a:hover, nav#uplist li a:active{
 	border:1px solid #aaa;
 	font-size:1.111111em;
 }
-#emailbox button#sendmsg{
+#emailbox .button#sendmsg{
 	background-image:url("../image/send-icons.png");
 	background-repeat: no-repeat;
 	background-position:90% 7px;
 	background-size:20%;
 }
-#emailbox button#sendmsg:hover{
+#emailbox .button#sendmsg:hover{
 	background-position:90% -25px;
 }
-#emailbox button#sendmsg:active{
+#emailbox .button#sendmsg:active{
 	background-position:90% -57px;
 }
-#emailbox button{
+#emailbox .button{
 	width:20%;
 	height:30px;
 	margin:30px 60px 0 0;
 	float:right;
 	background-color:#cacaca;
 }
-#emailbox button:hover{
+#emailbox .button:hover{
 	background-color:#6DAB3E;
 	color:#fff;
 }
-#emailbox button:active{
+#emailbox .button:active{
 	color:#5F8043;
 }
