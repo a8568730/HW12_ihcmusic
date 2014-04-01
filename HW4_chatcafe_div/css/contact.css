@@ -17,11 +17,33 @@ body,div#content{
 nav#uplist li a{
 	color:#43d5a9;
 }
-nav#uplist li a:hover{
-	color:#FFC141;
-}
+nav#uplist li a:hover, nav#uplist li a:active{
+	color:#FFC631;
+}/*
 nav#uplist li a:active{
-	color: #154984;
-}
+	color: #FFC141;
+}*/
 
 /*main*/
+#emailbox{
+	position:relative;
+	width:30%;
+	height:75%;
+	margin:5% auto;
+	background:#fff;	
+	text-align:center;
+	border-radius:10px;
+}
+#emailbox::before{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:20px;
+	background:-webkit-linear-gradient(left, white 50%, blue 50%);
+	background:-moz-linear-gradient(left, white 50%, blue 50%);
+}
+input[type="text"]+label::before{
+	content:'.';
+	opacity:0;
+	display:block;
+}
