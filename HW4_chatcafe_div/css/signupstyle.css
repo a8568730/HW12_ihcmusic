@@ -1,0 +1,71 @@
+.newman{
+ 	text-align:center;
+ }
+ #declare{
+	width:40%;
+	margin:auto;/*即使設0，為何上半部還是有margin-top:50px;*/
+}
+#account{margin-top:50px;}
+#password{
+	clear:both;
+	margin-top:25px;	
+}
+#account, #password{
+	border-radius:15px;
+	padding:6px 10px;
+}
+#account + label, 
+#password + label{
+	font-family:"PMingLiu",Georgia,serif;
+	color:#eee;
+}
+#account, 
+#password, 
+#account + label, 
+#password + label
+{	
+	font-size:1em;/*18px*/
+}
+#account + label::after,#password + label::after{
+	content:'';
+	display:block;
+}
+#declare nav{
+	display:block;
+	width:100%;
+	background:#43bd98;
+	background:rgba(67,189,152,0.8);
+	border-radius:15px;
+	margin-top:35px;
+	padding:5px 20px;
+}
+#declare nav > p{
+	color:#fdff86;
+}
+#declare nav > ol {
+	width:100%;
+	height:100px;
+	overflow:auto;
+}
+#declare nav > ol li {
+	margin-left:35px;
+	color:#eee;
+}
+
+button[name="signupb"]
+{
+	position:relative;
+	top:40px;
+	margin-left:5px;
+	padding:10px 40px; 
+	border-radius:10px;
+	color:#fff;
+	font-size:1.625em;
+	-webkit-transition:all linear 0.1s; 
+	-moz-transition:all linear 0.1s; 
+}
+button[name="signupb"]:active{
+	color:#333;
+	top:42px;
+}
+label[for="checkd"]{color:#DB0015;font-weight:bold;}

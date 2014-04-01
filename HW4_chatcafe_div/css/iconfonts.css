@@ -1,0 +1,10 @@
+@import url(http://weloveiconfonts.com/api/?family=maki);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+/* maki */
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
+}

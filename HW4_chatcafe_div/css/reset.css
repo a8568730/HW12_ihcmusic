@@ -1,0 +1,22 @@
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	outline:none;
+}
+.clearfix::before, .clearfix::after{
+	content:'.';
+	width:0;
+	height:0;
+	clear:both;
+	opacity:0;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Div切版 |Chat Caf'e</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript">
+		
+	</script>
+</head>
+<body>
+	<section id="wrapper">
+		<header class="clearfix">
+			<h1 class="en">Chat Caf'e</h1>
+			<nav id="uplist">
+				<ul>
+					<li><a href="#" class="en">Q&amp;A</a></li>
+					<li><a href="#">聯絡我們</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="content">
+			<article id="left">
+				<div id="intro">
+					<p>泡杯茶</p>
+					<p>聊聊天放鬆一下</p>
+					<p>別累壞了</p>
+				</div>
+				<div id="coffeecup"></div>
+			</article>
+			<article id="main">
+				<p><span class="en">Chat Caf’e</span>是輕鬆的交友平台，沒有廣告、沒有雜亂的活動公告，只有線上聊天。</p>
+				<p>忙碌當中，休息時間是短暫且很寶貴的。當您忙完或感到疲累時，可以來這裡和別人聊聊放鬆一下...</p>
+				<p>喔！也別忘了給自己泡杯熱茶。<span class="iconfont maki-cafe"></span></p>
+				<button name="bb" class="signup" onclick="enter('signup')">註冊</button>
+				<button name="bb" class="signin">登入</button>
+			 </article>
+		</div>
+		<script>
+		function enter(str){
+			 window.open(str+".html");
+		}
+		</script>
+	</section>
+</body>
+</html>
