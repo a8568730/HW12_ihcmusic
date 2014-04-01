@@ -29,6 +29,7 @@ form.newman{
 #account + label::after,#password + label::after{
 	content:'';
 	display:block;
+	opacity:0;
 }
 
 /*down*/
