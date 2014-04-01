@@ -24,7 +24,7 @@ form.newman{
 #account + label, 
 #password + label
 {	
-	font-size:1.11em;/*18px*/
+	font-size:1.11em;/*18px*1.111em*/
 }
 #account + label::after,#password + label::after{
 	content:'';

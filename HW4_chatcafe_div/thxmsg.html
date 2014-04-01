@@ -23,26 +23,12 @@
 			</nav>
 		</header>
 		<div id="content">
-			<form id="emailbox">
-				<p>請寫下您想說的話</p>
-				<label>名字</label> <input type="text"/>
-				<label>信箱</label> <input type="text"/>
-				<label>標題</label> <input type="text"/>
-				<!-- <label>內容</label> -->
-				<textarea placeholder="我想要說..." id="resetmsg"></textarea>
-				<button onclick="redirect('thxmsg')" id="sendmsg">送出</button>
-				<button>清除</button>
-			</form>
+			<p>謝謝您的寶貴意見，<br/>我們會盡快請專人回覆。</p>
 		</div>
 	</section>
 	<script>
 	function enter(str){
 		 window.open(str+".html");
-	}
-	function redirect(str){
-		/*$(location).attr('href',str+".html");
-		alert(str);*/
-		window.location.href = "thxmsg.html";
 	}
 	</script>
 </body>
