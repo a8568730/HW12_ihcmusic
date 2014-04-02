@@ -108,3 +108,7 @@ nav#uplist li a:hover, nav#uplist li a:active{
 #emailbox .button:active{
 	color:#5F8043;
 }
+
+nav#uplist li a.locate-contact{
+	color:#fff;
+}

@@ -163,9 +163,20 @@ div#content #main{
 	box-shadow:0 0 5px 1px #fff,
 			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
 }
-/*font-style*/
+
+
+
+/*sharing classes*/
+
+/*--font-style--*/
 .en{font-family:Georgia,serif;}
 nav li a,#main button{font-family:"PMingLiu",Georgia,serif;}
-/*select-style*/
+
+/*--select-style--*/
 ::selection {color:white;background:#F64D71;}
 ::-moz-selection {color:white;background:#F64D71;}
+
+/*--page-style--*/
+a.locatenow{
+	pointer-events:none; 
+}
