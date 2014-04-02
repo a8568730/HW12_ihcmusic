@@ -47,7 +47,7 @@ nav#uplist li + li {
 	border-left:1px solid #4babd2;
 }
 nav#uplist li a{
-	font-size:1em;/*18px*1em=18px*/
+	font-size:0.888888em;/*16px/18px*/
 	color:#4babd2;
 }
 nav#uplist li a:hover{

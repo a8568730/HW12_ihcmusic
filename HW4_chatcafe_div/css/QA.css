@@ -1,0 +1,31 @@
+@import url("style.css");
+
+nav#qa-list{	
+	width:80%;
+	height:100%;
+	margin:0 auto;
+	padding:1px;
+	font-size:1em;
+}
+nav#qa-list article{
+	
+}
+
+nav#qa-list article>h1{
+	width:20%;
+	font-weight:normal;
+	color:blue;
+	border-bottom:1px solid #fff;
+}
+nav#qa-list article>p{
+	width:50%;
+	height:1.5em;
+	overflow:hidden;
+}
+
+nav#qa-list aside{
+	margin-top:50px;
+}
+nav#qa-list aside>h1{
+	font-size:2em;
+}
