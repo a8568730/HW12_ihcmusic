@@ -9,10 +9,10 @@ form.newman{
 	margin-top:5%;
 }
 #account, #password{
-	border-radius:15px;
 	width:20%;
 	padding:6px 20px;
 	border:1px solid #43d5a9;
+	border-radius:20px;
 	font-size:1em;
 }
 #password{margin-top:25px;}
