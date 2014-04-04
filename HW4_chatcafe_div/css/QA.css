@@ -1,5 +1,13 @@
 @import url("style.css");
 
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* zocial */
+[class*="fontawesome-"]:before {
+  font-family: 'fontawesome', sans-serif;
+}
+
+
 div#content{padding:1px;}
 #qa-list{	
 	width:50%;
@@ -69,12 +77,44 @@ div#content{padding:1px;}
 	margin-top:50px;
 }
 #qa-list + aside>h1{
+	text-align:center;
+	color:#333;
 	font-family:"PMingLiu",Georgia,serif;
 	font-weight:normal;
 	font-size:0.66666em;
-	text-align:center;
+}
+#qa-list + aside>h1 a, 
+#qa-list + aside>h1 a:hover,
+#qa-list + aside>h1 a:active{
+	color:#A66400;	
+}
+#qa-list + aside>h1 a:hover{
+	text-decoration:underline;
 }
 
 #aq-list::after{
 	content:'...§ó¦h';
+}
+
+
+
+.fontawesome-hand-right{
+	font-size:2em;
+	vertical-align:bottom;
+	position:relative;
+	left:-20px;
+	-webkit-animation: iconanima 1s ease infinite ; /* Chrome, Safari, Opera */
+	animation: iconanima 1s ease infinite ;
+}
+
+@-webkit-keyframes iconanima{
+	0% {left:-20px;}
+	50% {left:-25px;}
+	100% {left:-20px;}
+}
+
+@keyframes iconanima{
+	0% {left:-20px;}
+	50% {left:-25px;}
+	100% {left:-20px;}
 }
