@@ -37,10 +37,26 @@
 				<button name="bb" class="signin">登入</button>
 			 </article>
 		</div>
+		
+		<aside id="signinbox">
+			
+		</aside>
+		
 		<script>
 		function enter(str){
 			 window.open(str+".html");
 		}
+		$(document).ready(function(){
+			$('button.signin').click(function(){
+				
+				
+				$('aside#signinbox').animate({
+					opacity: 1,
+					width:"20%",
+					height:"30%"
+				},1500);	
+			});
+		});
 		</script>
 	</section>
 </body>
