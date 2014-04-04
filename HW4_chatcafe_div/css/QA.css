@@ -8,8 +8,7 @@ div#content{padding:1px;}
 	padding:1px;
 	font-size:1em;
 	overflow-y:auto;
-	background:#43bd98;
-	background:rgba(67,189,152,0.8);
+
 }
 .fgroup{
 	margin:5% 0;
@@ -26,9 +25,11 @@ div#content{padding:1px;}
 	overflow:hidden;
 }*/
 #qa-list label{
+	font-size:1.222222em;
 	font-weight:normal;
-	color:blue;
-	border-bottom:1px solid #fff;
+/*	color:#444;
+	text-shadow:0px 0px 1px #fff;*/
+	color:#008a60;
 }
 
 #qa-list input[type="radio"]{
@@ -44,6 +45,9 @@ div#content{padding:1px;}
     overflow:hideen;
     opacity:0;
     z-index:1;
+	color:#222;
+	text-shadow:0px 0px 1px #e0e0e0;
+	word-break:break-all;
     /*
     -webkit-transition:none;
     -moz-transition:none;
@@ -67,7 +71,7 @@ div#content{padding:1px;}
 #qa-list + aside>h1{
 	font-family:"PMingLiu",Georgia,serif;
 	font-weight:normal;
-	font-size:0.888em;
+	font-size:0.66666em;
 	text-align:center;
 }
 
