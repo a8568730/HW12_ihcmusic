@@ -184,8 +184,31 @@ aside#signinbox form{
 	background:yellow;
 	width:15%;
 	height:20%;
-	top:0;
-	opacity:0.1; 
+	top:30%;
+	left:40%;
+	opacity:0.1;
+	padding:5px 1px; 
+}
+aside#signinbox > form input{
+	border-radius:15px;
+	padding:6px 10px;
+	border:1px solid #43d5a9;
+}
+aside#signinbox > form input:first-child{margin-top:25px;}
+aside#signinbox > form label
+{
+	font-family:"PMingLiu",Georgia,serif;
+	color:#eee;
+}
+aside#signinbox > form input,
+aside#signinbox > form label
+{	
+	font-size:1.11em;/*18px*1.111em*/
+}
+aside#signinbox > form label::after{
+	content:'';
+	display:block;
+	opacity:0;
 }
 
 
