@@ -39,7 +39,11 @@
 		</div>
 		
 		<aside id="signinbox">
-			
+			<form>
+				<input type="text" name="signing"/><label><span class="en">FB</span>帳號</label>
+				<input type="text" name="signing"/><label><span class="en">FB</span>密碼</label>
+				<button name="signing">確認</button>
+			</form>
 		</aside>
 		
 		<script>
@@ -48,9 +52,10 @@
 		}
 		$(document).ready(function(){
 			$('button.signin').click(function(){
+				$('aside#signinbox').css("display","block");
+				$('aside#signinbox').css("background","rgba(0,0,0,0.8)");
 				
-				
-				$('aside#signinbox').animate({
+				$('aside#signinbox form').animate({
 					opacity: 1,
 					width:"20%",
 					height:"30%"

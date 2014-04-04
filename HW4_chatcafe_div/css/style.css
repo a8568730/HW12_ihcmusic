@@ -172,7 +172,14 @@ div#content #main{
 
 
 /*Sign in*/
-aside#signinbox{
+aside#signinbox {
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:none;
+	top:0;
+}
+aside#signinbox form{
 	position:absolute;
 	background:yellow;
 	width:15%;
