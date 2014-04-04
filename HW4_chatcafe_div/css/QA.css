@@ -1,31 +1,73 @@
 @import url("style.css");
 
-nav#qa-list{	
-	width:80%;
-	height:100%;
-	margin:0 auto;
+div#content{padding:1px;}
+#qa-list{	
+	width:50%;
+	height:80%;
+	margin:0px auto;
 	padding:1px;
 	font-size:1em;
+	overflow-y:auto;
+	background:#43bd98;
+	background:rgba(67,189,152,0.8);
 }
-nav#qa-list article{
-	
+.fgroup{
+	margin:5% 0;
 }
-
-nav#qa-list article>h1{
+/*#qa-list article>h1{
 	width:20%;
 	font-weight:normal;
 	color:blue;
 	border-bottom:1px solid #fff;
 }
-nav#qa-list article>p{
+#qa-list article>p{
 	width:50%;
 	height:1.5em;
 	overflow:hidden;
+}*/
+#qa-list label{
+	font-weight:normal;
+	color:blue;
+	border-bottom:1px solid #fff;
 }
 
-nav#qa-list aside{
+#qa-list input[type="radio"]{
+	position:relative;
+	z-index:10;
+	opacity:0;
+}
+
+#qa-list input[type="radio"] + p {
+    position:relative;
+    height:0;
+    width:80%;
+    overflow:hideen;
+    opacity:0;
+    z-index:1;
+    /*
+    -webkit-transition:none;
+    -moz-transition:none;
+    */
+    -webkit-transition:0.6s ease-in-out 0s;
+    -moz-transition:0.6s ease-in-out 0s;
+    transition:0.6s ease-in-out 0s;
+}
+#qa-list input[type="radio"]:checked + p{
+    height:200px;
+    opacity:1;
+    -webkit-transition:0.6s ease-in-out 0.2s;
+    -moz-transition:0.6s ease-in-out 0.2s;
+    transition:0.6s ease-in-out 0.2s;
+}
+
+
+#qa-list aside{
 	margin-top:50px;
 }
-nav#qa-list aside>h1{
+#qa-list aside>h1{
 	font-size:2em;
+}
+
+#aq-list::after{
+	content:'...§ó¦h';
 }
