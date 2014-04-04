@@ -4,7 +4,7 @@
 html, body{
 	height:100%;
 	margin:auto;
-	font-family:DFKai-SB,Georgia, serif;/*閮剖�摮�*/
+	font-family:"DFKai-SB",Georgia, serif;/*閮剖�摮�*/
 	font-size:100%;/*16px*/ 
 }
 body {
@@ -229,6 +229,28 @@ nav li a,#main button{font-family:"PMingLiu",Georgia,serif;}
 /*--select-style--*/
 ::selection {color:white;background:#F64D71;}
 ::-moz-selection {color:white;background:#F64D71;}
+
+/*--placeholder-font--*/
+#password::-webkit-input-placeholder,
+#account::-webkit-input-placeholder {
+   	font-size:0.8888889em;
+   	color:#999;
+}
+#password::-moz-placeholder,
+#account::-moz-placeholder {
+   	font-size:0.8888889em;
+   	color:#999;
+}
+#password:-moz-placeholder,
+#account:-moz-placeholder {
+  	font-size:0.8888889em;
+	color:#999;
+}
+#password::-ms-placeholder,
+#account::-ms-placeholder {
+	font-size:0.8888889em;
+  	color:#999;
+}
 
 /*--page-style--*/
 a.locatenow{

@@ -10,20 +10,16 @@ form.newman{
 }
 #account, #password{
 	border-radius:15px;
-	padding:6px 10px;
+	width:20%;
+	padding:6px 20px;
 	border:1px solid #43d5a9;
+	font-size:1em;
 }
 #password{margin-top:25px;}
 #account + label, 
 #password + label{
 	color:#eee;
-}
-#account, 
-#password, 
-#account + label, 
-#password + label
-{	
-	font-size:1.11em;/*18px*1.111em*/
+	font-size:1.222222em;
 }
 #account + label::after,#password + label::after{
 	content:'';
