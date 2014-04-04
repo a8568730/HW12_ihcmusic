@@ -61,11 +61,14 @@ div#content{padding:1px;}
 }
 
 
-#qa-list aside{
+#qa-list + aside{
 	margin-top:50px;
 }
-#qa-list aside>h1{
-	font-size:2em;
+#qa-list + aside>h1{
+	font-family:"PMingLiu",Georgia,serif;
+	font-weight:normal;
+	font-size:0.888em;
+	text-align:center;
 }
 
 #aq-list::after{
