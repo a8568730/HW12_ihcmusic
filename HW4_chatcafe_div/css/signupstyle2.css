@@ -16,7 +16,6 @@ form.newman{
 #password{margin-top:25px;}
 #account + label, 
 #password + label{
-	font-family:"PMingLiu",Georgia,serif;
 	color:#eee;
 }
 #account, 
