@@ -1,0 +1,50 @@
+@import url("reset.css");
+
+/*作業列表*/
+header{
+	min-height:50px;
+	padding:10px 20px;
+	font-size:2.4em;/*24px/10px*/
+	color:white;
+	background:#666;
+}
+nav ul{
+	width:370px;/*如何跟li一樣大？*/
+	height:300px;/*auto fail*/
+	margin:50px auto 0px;
+}
+nav li{
+	float:left;
+	margin:20px 0 0 30px;
+	padding:10px 50px;	
+	font-size:1.8em;/*18px/10px*/
+	background:#eee;
+}
+nav li:nth-child(odd){
+	clear:left;
+	margin-left:0px;
+}
+/*
+nav li:nth-child(3n+0)::before{
+	content:'';
+	width:1px;
+	height:1px;
+	display:block;
+	clear:both;
+}*/
+.avoid-clicks{
+  pointer-events: none;
+  color:#ccc;
+}
+nav li a:hover{
+	color:#FF00A0;
+}
+nav li a:active{
+	color: #DD3CA1;
+	background:#eaeaea;
+}
+nav li, nav li a{
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+}

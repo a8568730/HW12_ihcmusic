@@ -1,0 +1,28 @@
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	outline:none;
+}
+html, body{
+	height:100%;
+}
+
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+
+.clearfix::before, .clearfix::after{
+	content:'';
+	display:block;
+	width:0;
+	height:0;
+	clear:both;
+}
