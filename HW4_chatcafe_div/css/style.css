@@ -4,7 +4,7 @@
 html, body{
 	height:100%;
 	margin:auto;
-	font-family:"DFKai-SB",Georgia, serif;/*閮剖�摮�*/
+	font-family:"DFKai-SB",Georgia, serif;/**/
 	font-size:100%;/*16px*/ 
 }
 body {
@@ -32,6 +32,7 @@ body {
 #wrapper>header h1{
 	float:left;
 	display:inline;
+	font-family:'Niconne',sans-serif;
 	font-size:2.666667em;/*18px*2.666667em=48px;*/
 	color:#82592D;
 }
@@ -42,6 +43,7 @@ nav#uplist{
 }
 nav#uplist li{
 	float:right;
+	font-family:verdana,sans-serif;
 	padding:0px 10px;
 }
 nav#uplist li + li {
@@ -64,7 +66,14 @@ nav#uplist li a:active{
 	text-decoration:none;
 }
 
-
+hr{
+	border-bottom:1px solid #82592D;
+	margin-bottom:30px;
+	/*margin-bottom:30px;
+	height:5px;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOUlEQVQYV43MQQ4AIAgDQfv/R4OYaFChsOfJYvQSNJxMgwouZDMGD2LwQhn8UARD9MIUeUjRhiUyqPw8Cgq7TDlmAAAAAElFTkSuQmCC);
+	background-repeat:repeat-x;*/
+}
 /*middle*/
 div#content{
 	position:relative;
@@ -75,36 +84,43 @@ div#content{
 	user-select:none;
 	-webkit-user-select:none;
 }
-div#content
-{
-	
-}
-div#content #main{
-	
-}
-#main p{
+
+#intro{
+	z-index:10;
+	position:absolute;
+	top:20%;
+	right:7%;
 	width:310px;
-	color:#333;
-	font-size:1.111111em;/*18px*1.11em=20px*/
+	color:white;
+	font-size:1.333333em;/*18px*1.3333em=*/
+	word-spacing:100px;
 	line-height:1.875em;
-	word-wrap:break-word;
+	font-family:"SimHei";
 }
-#main p+p{
+#intro p+p{
 	margin-top:1.2em;
 }
-#main .iconfont{color:#358c71;font-size:1.25em;}
-#main button{
+.iconfont{color:#358c71;font-size:1.25em;}
+#sign-list button{
 	position:relative;
-	top:40px;
+	width:150px;
+	height:70px;
+	top:5px;
 	margin-left:5px;
-	padding:10px 40px; 
-	border-radius:35px;
+	padding:10px 40px 20px; 
 	color:#fff;
-	font-size:1.625em;
+	font-size:1.3em;
+	background:url('../image/scribble_1.png') no-repeat;
+	background-size:contain;
 	-webkit-transition:all linear 0.1s; 
 	-moz-transition:all linear 0.1s; 
 }
-#main .signup{
+#sign-list button:hover{
+	background:url('../image/scribble_1_hover.png') no-repeat;
+	background-size:contain;
+	color:#82592D;
+}
+/*#sign-list .signup{
 	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#f68c57),color-stop(70%,#f68c57),to(#fbbfa0));
 	background:-moz-linear-gradient(top,#f68c57 70%,#fbbfa0);
 	border:1px solid #fbbfa0;
@@ -113,7 +129,7 @@ div#content #main{
 			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
 	text-shadow:1px -1px 3px #f68c57;
 }
-#main .signin{
+#sign-list .signin{
 	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#49abd3),color-stop(70%,#49abd3),to(#99c8e4));
 	background:-moz-linear-gradient(top,#49abd3 70%,#99c8e4);
 	border:1px solid #85cee8;
@@ -122,7 +138,7 @@ div#content #main{
 			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
 	text-shadow:1px -1px 3px #49abd3;
 }
-#main .signup, #main .signin{
+#sign-list .signup, #sign-list .signin{
 	-webkit-transition:all ease-in-out 0.2s; 
 	-moz-transition:all ease-in-out 0.2s;	
 }
@@ -145,7 +161,7 @@ div#content #main{
 	box-shadow:0 0 5px 1px #fff,
 			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
 }
-
+*/
 
 /*Sign in*/
 aside#signinbox {
