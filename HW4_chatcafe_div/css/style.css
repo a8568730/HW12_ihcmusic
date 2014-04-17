@@ -5,7 +5,7 @@ html, body{
 	height:100%;
 	position:relative;
 	margin:auto;
-	font-family:"DFKai-SB",Georgia, serif;/**/
+	font-family:"SimHei",sans-serif;/**/
 	font-size:100%;/*16px*/ 
 }
 body {
@@ -44,30 +44,27 @@ nav#uplist{
 }
 nav#uplist li{
 	float:right;
-	font-family:verdana,sans-serif;
 	padding:0px 10px;
 }
 nav#uplist li + li {
-	border-right:1px solid #4babd2;
+	border-right:1px solid #82592D;
 }
-nav#uplist li a{
-	font-size:0.888888em;/*16px/18px*/
-	color:#4babd2;
+nav#uplist li{
+	font-family:'Cuprum', sans-serif;	
+	font-size:0.99999em;/*18px*/
+	color:#82592D; 
+}
+nav#uplist li:hover{
+	background:#D05600;
+}
+nav#uplist li:hover a{
+	color:white;	
 }
 nav#uplist li a.locatenow{
 	pointer-events:none; 
-	color:#55330F;
+	color:#DBB25F;
 }
-nav#uplist li a:hover{
-	color:#4082cb;
-	text-decoration: underline;
-}
-nav#uplist li a:active{
-	color: #154984;
-	text-decoration:none;
-}
-
-hr{
+	hr{
 	border-bottom:1px solid #82592D;
 	margin-bottom:30px;
 	/*margin-bottom:30px;
@@ -96,12 +93,11 @@ div#content{
 	font-size:1.333333em;/*18px*1.3333em=*/
 	word-spacing:100px;
 	line-height:1.875em;
-	font-family:"SimHei";
 }
 #intro p+p{
 	margin-top:1.2em;
 }
-.iconfont{color:#358c71;font-size:1.25em;}
+/*.iconfont{color:#358c71;font-size:1.25em;}*/
 #sign-list .signup, 
 #sign-list .signin{
 	position:relative;
@@ -111,7 +107,8 @@ div#content{
 	margin-left:5px;
 	padding:7px 40px 20px; 
 	color:#fff;
-	font-size:1.3em;
+	font-family:"SimHei";
+	font-size:1em;/*18px*/
 	background:url('../image/scribble_1.png') no-repeat;
 	background-size:contain;
 	-webkit-transition:all linear 0.1s; 
@@ -193,7 +190,7 @@ aside#signinbox > form input[type="submit"]:active{
 
 /*--font-style--*/
 .en{font-family:Georgia,serif;}
-nav li a,#main button{font-family:"PMingLiu",Georgia,serif;}
+
 
 /*--select-style--*/
 ::selection {color:white;background:#F64D71;}
