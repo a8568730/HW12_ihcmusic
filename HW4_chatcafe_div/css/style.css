@@ -20,6 +20,7 @@ body {
 	position:relative;
 	font-size:1.125em;/*18px/16px=1.125em;*/
 	line-height:1.7em;/*30.6px*/
+	background:url('../image/bgpatterns_cloth2.png');
 }
 /*up*/
 #wrapper>header{
