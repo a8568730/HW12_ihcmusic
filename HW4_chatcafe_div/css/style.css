@@ -3,6 +3,7 @@
 
 html, body{
 	height:100%;
+	position:relative;
 	margin:auto;
 	font-family:"DFKai-SB",Georgia, serif;/**/
 	font-size:100%;/*16px*/ 
@@ -101,13 +102,14 @@ div#content{
 	margin-top:1.2em;
 }
 .iconfont{color:#358c71;font-size:1.25em;}
-#sign-list button{
+#sign-list .signup, 
+#sign-list .signin{
 	position:relative;
 	width:150px;
 	height:70px;
 	top:5px;
 	margin-left:5px;
-	padding:10px 40px 20px; 
+	padding:7px 40px 20px; 
 	color:#fff;
 	font-size:1.3em;
 	background:url('../image/scribble_1.png') no-repeat;
@@ -115,69 +117,34 @@ div#content{
 	-webkit-transition:all linear 0.1s; 
 	-moz-transition:all linear 0.1s; 
 }
-#sign-list button:hover{
-	background:url('../image/scribble_1_hover.png') no-repeat;
+#sign-list .signup:hover{
+	background:url('../image/scribble_1_hover2.png') no-repeat;
 	background-size:contain;
-	color:#82592D;
+	color:#fff;
 }
-/*#sign-list .signup{
-	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#f68c57),color-stop(70%,#f68c57),to(#fbbfa0));
-	background:-moz-linear-gradient(top,#f68c57 70%,#fbbfa0);
-	border:1px solid #fbbfa0;
-	box-shadow:0 0 0 1px #e38251,
-			   0 0px 5px rgba(0,0,0,0.45), 
-			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
-	text-shadow:1px -1px 3px #f68c57;
+#sign-list .signin:hover{
+	background:url('../image/scribble_1_hover_r.png') no-repeat;
+	background-size:contain;
+	color:#fff;
 }
-#sign-list .signin{
-	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#49abd3),color-stop(70%,#49abd3),to(#99c8e4));
-	background:-moz-linear-gradient(top,#49abd3 70%,#99c8e4);
-	border:1px solid #85cee8;
-	box-shadow:0 0 0 1px #279ba7,
-			   0 0 5px rgba(0,0,0,0.25),
-			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
-	text-shadow:1px -1px 3px #49abd3;
-}
-#sign-list .signup, #sign-list .signin{
-	-webkit-transition:all ease-in-out 0.2s; 
-	-moz-transition:all ease-in-out 0.2s;	
-}
-
-#main .signup:hover{
-	border-color:#e38251;
-	box-shadow:0 0 10px 3px #fff,
-			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
-	color:#555;
-}
-#main .signin:hover{
-	border-color:#279ba7;
-	box-shadow:0 0 10px 3px #fff,
-			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
-	color:#555;
-}
-#main .signup:active, #main .signin:active{
-	color:#333;
-	top:42px;
-	box-shadow:0 0 5px 1px #fff,
-			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
-}
-*/
 
 /*Sign in*/
 aside#signinbox {
 	position:absolute;
-	width:100%;
-	height:100%;
-	display:none;
 	top:0;
+	left:0;
+	z-index:10;
+	width:10%;
+	height:10%;
+	display:none;
 }
 aside#signinbox form{
 	position:absolute;
 	/*background:#552200;*/
 	top:30%;
 	left:35%;
-	width:15%;
-	height:30%;
+	width:25%;
+	height:25%;
 	padding:5px 1px;
 	border-radius:15px;
 	text-align:center; 
@@ -185,7 +152,7 @@ aside#signinbox form{
 	border:2px solid #222;
 	box-shadow:0px 0px 10px 2px rgba(255,255,255,0.6);
 	overflow:hidden;
-	opacity:0;
+	opacity:1;
 }
 aside#signinbox > form input[type="text"]{
 	width:50%;
