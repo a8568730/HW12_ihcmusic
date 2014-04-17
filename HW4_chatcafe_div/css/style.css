@@ -16,7 +16,7 @@ body {
 	background:url('../image/bgpatterns_cloth2.png');
 }
 #wrapper {
-	width:80%;
+	width:1120px;
 	margin:auto;
 	font-size:1.125em;/*18px/16px=1.125em;*/
 	line-height:1.7em;/*30.6px*/
@@ -26,7 +26,7 @@ body {
 	/*width:500px;
 	min-height:35px;
 	margin:38px 0px 0 60px;*/
-	padding:60px 40px 20px;
+	padding:60px 0px 20px;
 	min-height:35px;
 }
 #wrapper>header h1{
@@ -41,11 +41,11 @@ nav#uplist{
 	margin-top:10px;
 }
 nav#uplist li{
-	float:left;
+	float:right;
 	padding:0px 10px;
 }
 nav#uplist li + li {
-	border-left:1px solid #4babd2;
+	border-right:1px solid #4babd2;
 }
 nav#uplist li a{
 	font-size:0.888888em;/*16px/18px*/
@@ -68,18 +68,19 @@ nav#uplist li a:active{
 /*middle*/
 div#content{
 	position:relative;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
 	width:100%; 
+	text-align:center;
 	user-select:none;
 	-webkit-user-select:none;
 }
 div#content
 {
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
+	
 }
 div#content #main{
-	padding-top:35px;
-	padding-left:30px;
+	
 }
 #main p{
 	width:310px;
