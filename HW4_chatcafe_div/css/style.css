@@ -107,7 +107,7 @@ div#content{
 	margin-left:5px;
 	padding:7px 40px 20px; 
 	color:#fff;
-	font-family:"SimHei";
+	font-family:'Cuprum',sans-serif;
 	font-size:1em;/*18px*/
 	background:url('../image/scribble_1.png') no-repeat;
 	background-size:contain;
@@ -219,3 +219,7 @@ aside#signinbox > form input[type="submit"]:active{
 }
 
 /*--page-style--*/
+.title{
+	color:#DBB25F;
+	font-size:2em;
+}
