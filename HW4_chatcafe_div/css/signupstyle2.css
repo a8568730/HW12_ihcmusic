@@ -11,6 +11,7 @@
  }
  #content .right{
  	float:right;
+
  }
  #content::after{
  	content:'.';
@@ -21,6 +22,7 @@
  	width:100%;
  	height:700px;
  	background:url('../image/咖啡_心拉花_408356.jpg');
+ 	background-position:-150px 0px;
  }
  /*up*/
 form.newman{
@@ -36,7 +38,7 @@ form.newman{
 	width:50%;
 	padding:6px 20px;
 	border:1px solid #82592D;
-	border-radius:20px;
+	border-radius:5px;
 	font-size:1em;
 	font-family:'Cuprum',sans-serif;
 }
@@ -62,7 +64,7 @@ form.newman{
 	width:100%;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	background:#A45807;
+	background:#82592D;
 	border-radius:5px;
 	margin:0px auto 0;
 	padding:10px 20px;
@@ -84,17 +86,17 @@ form.newman{
 input#checkd{
 	display:none;
 }
-label[for="checkd"]{color:#EF0017;font-weight:bold;position:relative;top:20px;left:30px;}
+label[for="checkd"]{color:#EF0017;font-weight:bold;position:relative;top:20px;left:34px;}
 label[for="checkd"]::before{
 	content:'';
 	display:inline-block;
 	width:30px;
 	height:30px;
-	background:#A45807;
+	background:#82592D;
 	border-radius:3px;
 	position:absolute;
 	top:-2px;
-	left:-32px;
+	left:-36px;
 }
 input#checkd:checked + label[for="checkd"]::before{
 	content:'\2714';
@@ -104,45 +106,6 @@ input#checkd:checked + label[for="checkd"]::before{
 	text-shadow:0 2px 2px #eee;
 	text-shadow:0 2px 2px rgba(0,0,0,0.3);
 }
-
-
-/*
-button[name="signupb"]
-{
-	position:relative;
-	top:10px;
-	left:100px;
-	padding:10px 30px; 
-	border-radius:35px;
-	color:#fff;
-	font-size:1.11111em;//24px/18px=
-	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#f68c57),color-stop(70%,#f68c57),to(#fbbfa0));
-	background:-moz-linear-gradient(top,#f68c57 70%,#fbbfa0);
-	border:1px solid #fbbfa0;
-	box-shadow:0 0 0 1px #e38251,
-			   0 0px 5px rgba(0,0,0,0.45), 
-			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
-	text-shadow:1px -1px 3px #f68c57;
-	-webkit-transition:all ease-in-out 0.3s; 
-	-moz-transition:all ease-in-out 0.3s;	
-}
-
-button[name="signupb"]:hover{
-	border-color:#e38251;
-	box-shadow:0 0 10px 3px #fff,
-			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
-	color:#555;
-}
-button[name="signupb"]:active{
-	top:12px;
-	color:#333;
-	box-shadow:0 0 5px 1px #fff,
-			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
-}*/
-button[name="signupb"]{
-	
-}
-
 button[name="signupb"]{
 	float:right;
 	margin-top:10%;
