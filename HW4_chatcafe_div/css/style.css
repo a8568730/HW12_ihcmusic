@@ -78,7 +78,6 @@ div#content{
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	width:100%; 
-	text-align:center;
 	user-select:none;
 	-webkit-user-select:none;
 }
@@ -224,4 +223,5 @@ aside#signinbox > form input[type="submit"]:active{
 	font-size:2em;
 	font-weight:normal;
 	font-family:'Cuprum';
+	text-align:center;
 }
