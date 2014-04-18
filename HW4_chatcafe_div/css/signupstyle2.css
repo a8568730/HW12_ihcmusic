@@ -62,7 +62,7 @@ form.newman{
 	width:100%;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	background:#82592D;
+	background:#A45807;
 	border-radius:5px;
 	margin:0px auto 0;
 	padding:10px 20px;
@@ -84,16 +84,16 @@ form.newman{
 input#checkd{
 	display:none;
 }
-label[for="checkd"]{color:#EF0017;font-weight:bold;position:relative;top:10px;left:30px;}
+label[for="checkd"]{color:#EF0017;font-weight:bold;position:relative;top:20px;left:30px;}
 label[for="checkd"]::before{
 	content:'';
 	display:inline-block;
 	width:30px;
 	height:30px;
-	background:#82592D;
+	background:#A45807;
 	border-radius:3px;
 	position:absolute;
-	top:-10px;
+	top:-2px;
 	left:-32px;
 }
 input#checkd:checked + label[for="checkd"]::before{
@@ -104,6 +104,9 @@ input#checkd:checked + label[for="checkd"]::before{
 	text-shadow:0 2px 2px #eee;
 	text-shadow:0 2px 2px rgba(0,0,0,0.3);
 }
+
+
+/*
 button[name="signupb"]
 {
 	position:relative;
@@ -112,7 +115,7 @@ button[name="signupb"]
 	padding:10px 30px; 
 	border-radius:35px;
 	color:#fff;
-	font-size:1.11111em;/*24px/18px=*/
+	font-size:1.11111em;//24px/18px=
 	background:-webkit-gradient(linear,0% 0%,0% 100%,from(#f68c57),color-stop(70%,#f68c57),to(#fbbfa0));
 	background:-moz-linear-gradient(top,#f68c57 70%,#fbbfa0);
 	border:1px solid #fbbfa0;
@@ -135,7 +138,27 @@ button[name="signupb"]:active{
 	color:#333;
 	box-shadow:0 0 5px 1px #fff,
 			   0 1px 2px 0px rgba(255,255,255,0.45) inset;
+}*/
+button[name="signupb"]{
+	
 }
+
+button[name="signupb"]{
+	float:right;
+	margin-top:10%;
+	padding:10px 40px; 
+	color:#fff;
+	font-family:'Cuprum',sans-serif;
+	font-size:1em;/*18px*/
+	background:#A45807;
+	-webkit-transition:all linear 0.1s; 
+	-moz-transition:all linear 0.1s; 
+}
+button[name="signupb"]:hover{
+	background:#DBB25F;
+	color:#A45807;
+}
+
 /*focus effect*/
 #account:focus, #password:focus{
 	border-color: #D05600; 
