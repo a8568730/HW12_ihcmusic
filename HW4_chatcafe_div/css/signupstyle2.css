@@ -14,12 +14,14 @@ form.newman{
 	border:1px solid #43d5a9;
 	border-radius:20px;
 	font-size:1em;
+	font-family:'Cuprum',sans-serif;
 }
 #password{margin-top:25px;}
 #account + label, 
 #password + label{
-	color:#eee;
+	color:#82592D;
 	font-size:1.222222em;
+	
 }
 #account + label::after,#password + label::after{
 	content:'';
@@ -118,11 +120,11 @@ button[name="signupb"]:active{
 }
 /*focus effect*/
 #account:focus, #password:focus{
-	border-color: rgba(67,189,152,0.8); 
-	-webkit-box-shadow:0px 0px 6px white, 0 1px 4px #ddd inset ;
+	border-color: #D05600; 
+	-webkit-box-shadow:0px 0px 6px #F5893D, 0 1px 4px #ddd inset;
 }
 #account:focus + label, 
 #password:focus + label
 {	
-	color:#fdff86;
+	color:#D05600;
 }
