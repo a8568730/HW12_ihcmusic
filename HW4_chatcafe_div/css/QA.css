@@ -11,35 +11,24 @@
 div#content{padding:1px;}
 #qa-list{	
 	width:50%;
-	height:80%;
 	margin:0px auto;
 	padding:1px;
 	font-size:1em;
-	overflow-y:auto;
-
+	
 }
 .fgroup{
 	margin:5% 0;
-}
-/*#qa-list article>h1{
-	width:20%;
-	font-weight:normal;
-	color:blue;
-	border-bottom:1px solid #fff;
-}
-#qa-list article>p{
-	width:50%;
-	height:1.5em;
 	overflow:hidden;
-}*/
+}
 #qa-list label{
 	font-size:1.222222em;
 	font-weight:normal;
-/*	color:#444;
-	text-shadow:0px 0px 1px #fff;*/
 	color:#008a60;
+	padding:10px 0;
 }
-
+#qa-list label:hover{
+	color:#D05600;
+}
 #qa-list input[type="radio"]{
 	position:relative;
 	z-index:10;
@@ -47,32 +36,21 @@ div#content{padding:1px;}
 }
 
 #qa-list input[type="radio"] + p {
-    position:relative;
-    height:0;
-    width:80%;
-    overflow:hideen;
-    opacity:0;
-    z-index:1;
-	color:#222;
+	height:0;
+    width:100%;
+    margin-top:10px;
+    color:#222;
 	text-shadow:0px 0px 1px #e0e0e0;
-	word-break:break-all;
-    /*
-    -webkit-transition:none;
-    -moz-transition:none;
-    */
     -webkit-transition:0.6s ease-in-out 0s;
     -moz-transition:0.6s ease-in-out 0s;
     transition:0.6s ease-in-out 0s;
 }
 #qa-list input[type="radio"]:checked + p{
-    height:200px;
-    opacity:1;
+	height:200px;
     -webkit-transition:0.6s ease-in-out 0.2s;
     -moz-transition:0.6s ease-in-out 0.2s;
     transition:0.6s ease-in-out 0.2s;
 }
-
-
 #qa-list + aside{
 	margin-top:50px;
 }
@@ -91,13 +69,12 @@ div#content{padding:1px;}
 #qa-list + aside>h1 a:hover{
 	text-decoration:underline;
 }
-
 #aq-list::after{
 	content:'...§ó¦h';
 }
 
 
-
+/*finger animation*/
 .fontawesome-hand-right{
 	font-size:2em;
 	vertical-align:bottom;
