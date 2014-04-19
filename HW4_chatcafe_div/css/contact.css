@@ -1,11 +1,16 @@
 @import url('style.css');
 /*change color*/
+
+#content{
+	height:100%;
+}
 /*main*/
 #emailbox{
 	position:absolute;
 	top:7%;
 	right:7%;
 	width:32%;
+	height:90%;
 	border-radius:5px;
 	text-align:center;
 	color:white;
@@ -33,17 +38,17 @@
 	font-size:0.8888889em;
 	color:#fff;
 }
-#emailbox input[type="text"]{
-	width:85%;
-	padding:3px 10px; 
-	border-bottom:1px solid #aaa;
-	font-size:0.8888889em;
-}
 #emailbox label{
 	color:#fff;	
-	position:relative;
-	left:-80px;
-	top:10px;
+	display:block;
+	padding:2% 0 0 7%;
+	text-align:left;
+}
+#emailbox input[type="text"]{
+	width:85%;
+	padding:1% 2%; 
+	border-bottom:1px solid #aaa;
+	font-size:0.8888889em;
 }
 #emailbox input[type="text"]+label::before{
 	content:'.';
@@ -54,10 +59,10 @@
 	resize: none;
 	position:relative;
 	width:90%;
-	height:150px;
+	height:20%;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	margin:40px auto 0;
+	margin:12% auto 0;
 	padding:5px 10px;
 	display:block;
 	border:1px solid #aaa;
@@ -65,7 +70,7 @@
 #emailbox .button{
 	float:right;
 	padding:10px 60px;
-	margin:30px 20px 0 0;
+	margin:5% 5% 0 0;
 	background-color:#82592D;
 	background-repeat: no-repeat;
 	background-size:30%;
@@ -86,11 +91,6 @@
 	background-color:#008a60;
 }
 
-@media only screen and (max-width : 768px){
-	#emailbox textarea{
-		height:100px;
-	}
-}
 
 /*Appx.*/
 #emailbox input[type="text"],
