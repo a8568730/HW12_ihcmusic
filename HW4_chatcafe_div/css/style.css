@@ -44,7 +44,6 @@ nav#uplist{
 }
 nav#uplist li{
 	float:right;
-	padding:0px 10px;
 }
 nav#uplist li + li {
 	border-right:1px solid #82592D;
@@ -52,19 +51,20 @@ nav#uplist li + li {
 nav#uplist li{
 	font-family:'Cuprum', sans-serif;	
 	font-size:0.99999em;/*18px*/
-	color:#82592D; 
 }
-nav#uplist li:hover{
+nav#uplist li a{
+	padding:5px 20px;
+	color:#82592D;	
+}
+nav#uplist li a:hover{
 	background:#D05600;
-}
-nav#uplist li:hover a{
-	color:white;	
+	color:#fff;
 }
 nav#uplist li a.locatenow{
 	pointer-events:none; 
-	color:#DBB25F;
+	color:#C07b30;
 }
-	hr{
+hr{
 	border-bottom:1px solid #82592D;
 	margin-bottom:30px;
 	/*margin-bottom:30px;
