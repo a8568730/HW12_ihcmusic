@@ -1,14 +1,17 @@
 @import url('style.css');
-@import url('contact.css');
 
-#emailbox h5{
-	position:relative;
-	top:45%;
-	color:#aaa;
-	font-size:1.2em;
-	font-weight:100;
+
+#content{
+	text-align:center;
+	color:#82592D;
 }
-
-nav#uplist li a.locate-contact{
-	color:#fff;
+.thxmsg{
+	margin:20% 0 20px;
+	font-size:2.2em;
+	font-family:'Niconne',sans-serif;
+	font-weight:normal;
+}
+h5{
+	font-size:1em;	
+	font-weight:normal;
 }
