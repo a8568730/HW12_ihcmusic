@@ -40,15 +40,16 @@ div#content{padding:1px;}
     margin-top:10px;
     color:#222;
 	text-shadow:0px 0px 1px #e0e0e0;
-    -webkit-transition:0.6s ease-in-out 0s;
-    -moz-transition:0.6s ease-in-out 0s;
-    transition:0.6s ease-in-out 0s;
+    /*-webkit-transition:all 0.6s ease-in-out 0s;
+    -moz-transition:all 0.6s ease-in-out 0s;
+    transition:all 0.6s ease-in-out 0s;*/
 }
 #qa-list input[type="radio"]:checked + p{
-	height:200px;
-    -webkit-transition:0.6s ease-in-out 0.2s;
-    -moz-transition:0.6s ease-in-out 0.2s;
-    transition:0.6s ease-in-out 0.2s;
+	height:inherit;
+	overflow:visible;
+/*  -webkit-transition:all 0.6s ease-in-out 0.2s;
+    -moz-transition:all 0.6s ease-in-out 0.2s;
+    transition:all 0.6s ease-in-out 0.2s;*/
 }
 #qa-list + aside{
 	margin-top:50px;
