@@ -1,10 +1,6 @@
-@import url(http://weloveiconfonts.com/api/?family=maki);
+@import url(http://weloveiconfonts.com/api/?family=typicons);
 
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
-/* maki */
-[class*="maki-"]:before {
-  font-family: 'maki', sans-serif;
+/* mail icon */
+[class*="typicons-"]:before {
+  font-family: 'typicons', sans-serif;
 }

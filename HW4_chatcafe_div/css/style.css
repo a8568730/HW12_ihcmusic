@@ -1,5 +1,5 @@
 @import url("reset.css");
-@import url("iconfonts.css");
+
 
 html, body{
 	height:100%;
@@ -83,7 +83,6 @@ div#content{
 }
 
 #intro{
-	z-index:10;
 	position:absolute;
 	top:20%;
 	right:7%;
