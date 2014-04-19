@@ -95,27 +95,26 @@ div#content{
 #sign-list .signup, 
 #sign-list .signin{
 	position:relative;
-	width:150px;
-	height:70px;
+	width:15%;
+	height:20%;
 	top:5px;
 	margin-left:5px;
-	padding:7px 40px 20px; 
+	padding:15px 40px; 
 	color:#fff;
 	font-family:'Cuprum',sans-serif;
 	font-size:1em;/*18px*/
 	background:url('../image/scribble_1.png') no-repeat;
+	background-position:center;
 	background-size:contain;
 	-webkit-transition:all linear 0.1s; 
 	-moz-transition:all linear 0.1s; 
 }
 #sign-list .signup:hover{
-	background:url('../image/scribble_1_hover2.png') no-repeat;
-	background-size:contain;
+	background-image:url('../image/scribble_1_hover2.png');
 	color:#fff;
 }
 #sign-list .signin:hover{
-	background:url('../image/scribble_1_hover_r.png') no-repeat;
-	background-size:contain;
+	background-image:url('../image/scribble_1_hover_r.png');
 	color:#fff;
 }
 
