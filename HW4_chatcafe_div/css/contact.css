@@ -27,23 +27,20 @@
 }*/
 #emailbox p{
 	background:rgba(255,255,255,0.5);
-	margin-bottom:20px;
-	padding:20px 0px;
+	padding:5px 0px;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
-	font-size:1.2em;
+	font-size:0.8888889em;
 	color:#fff;
 }
 #emailbox input[type="text"]{
 	width:85%;
-	height:20px;
-	padding:5px 10px;
+	padding:3px 10px; 
 	border-bottom:1px solid #aaa;
 	font-size:0.8888889em;
 }
 #emailbox label{
 	color:#fff;	
-	
 	position:relative;
 	left:-80px;
 	top:10px;
@@ -57,7 +54,7 @@
 	resize: none;
 	position:relative;
 	width:90%;
-	height:100px;
+	height:150px;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	margin:40px auto 0;
@@ -89,7 +86,11 @@
 	background-color:#008a60;
 }
 
-
+@media only screen and (max-width : 768px){
+	#emailbox textarea{
+		height:100px;
+	}
+}
 
 /*Appx.*/
 #emailbox input[type="text"],
