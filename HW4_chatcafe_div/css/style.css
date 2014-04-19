@@ -67,10 +67,6 @@ nav#uplist li a.locatenow{
 hr{
 	border-bottom:1px solid #82592D;
 	margin-bottom:30px;
-	/*margin-bottom:30px;
-	height:5px;
-	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOUlEQVQYV43MQQ4AIAgDQfv/R4OYaFChsOfJYvQSNJxMgwouZDMGD2LwQhn8UARD9MIUeUjRhiUyqPw8Cgq7TDlmAAAAAElFTkSuQmCC);
-	background-repeat:repeat-x;*/
 }
 /*middle*/
 div#content{
