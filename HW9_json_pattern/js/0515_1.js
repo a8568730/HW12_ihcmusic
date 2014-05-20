@@ -48,14 +48,10 @@ $(document).ready(function(){
 			$pic.css('opacity',0);
 			$('.out').css('backgroundImage',src);
 			$('.box_a').find('.view').removeClass('cb');
-			$(this).addClass('cb');
-			
+			$(this).addClass('cb');		
 		});
-		$('article').on('click','button',function(){
-			alert('hoho');
-			var $article = $(this).closest('article');
-				$article.toggleClass('colortoggle');
-		});
+
+		addviewclick();
 });
 
 function re_win(){
@@ -126,6 +122,14 @@ function getcon(filename){
 			
 		});
 		$('.box_a').prepend($article);
+		addviewclick();
 		return false;
 	});
 };	
+
+function addviewclick(){
+	$('article').on('click','button',function(){
+		var $article = $(this).closest('article');
+			$article.toggleClass('colortoggle');
+	});
+};
