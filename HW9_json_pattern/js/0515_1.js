@@ -5,9 +5,9 @@ $(document).ready(function(){
 		$article = $('.box_a').html();
 		
 		
-	    $(window).bind("load resize", function() {
+		//$(window).bind("load resize", function() {
 			//re_win();
-		});
+		//});
 		
 		//ex0.load text to layout
 		//$('.box_a').load('index_0_content.html');
@@ -17,23 +17,28 @@ $(document).ready(function(){
 			
 			switch (this.id){
 				case 'b_1':
-					//getcon('js/list.json');
-					getcon('js/list3.json');
+					getcon('js/list4.json');
 					break;
 					
 				case 'b_2':
-					getcon('js/list4.json');
+					getcon('js/list5.json');
+					break;
+					
+				case 'b_3':
+					getcon('js/list6.json');
 					break;	
+				
+				case 'b_4':
+					getcon('js/list7.json');
+					break;
 			}
 			$(this).addClass('cb').siblings().removeClass('cb');
 			$('.box_a').prepend($article);	
 			
-			//瘥活�賡�閮苓isplay, ����洵銝�活��fadeIn��
 			$('.box_a').css({"display":"none"}).fadeIn();
 		});
 		
 		$('.box_a').on('click','.vbtn',function(){
-			//$('.box_a').show();
 			//alert('haha');
 			var $pic = $(this).closest('.text').prev(); 
 			var id   = $pic.attr('id');
@@ -42,6 +47,12 @@ $(document).ready(function(){
 			$('.pic').css('opacity',1);
 			$pic.css('opacity',0);
 			$('.out').css('backgroundImage',src);
+			
+		});
+		$('article').on('click','button',function(){
+			alert('hoho');
+			var $article = $(this).closest('article');
+				$article.toggleClass('colortoggle');
 			
 		});
 });

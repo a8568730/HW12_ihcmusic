@@ -13,6 +13,7 @@ body{
 	bottom:0;
 	left:0;
 	right:0;
+	overflow-x:hidden;
 }
 
 .box_b_b{
@@ -37,15 +38,17 @@ body{
 	text-indent:20px;
 	text-align:left;
 	color:#fff;
-	font-size:2.5em;
-	line-height:50px;
+	font-size:4em;
+	line-height:1.5em;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 }
 .box_b_b > p {
-	margin-top:20px;
+	margin-top:40px;
 	text-indent:20px;
-	font-size:1.2em;
+	font-size:1.4em;
+	color:#FFDF00;/*#007319*/
+	
 }
 .ba{
 	position:relative;
@@ -129,10 +132,12 @@ body{
 }
 .box_a article{
 	position:fixed;
-	right:150px;
+	right:125px;
 	top:200px;
-	width:40%;
-	
+	width:37%;
+	padding:15px;
+	background:rgba(255,255,255,0.4);
+	border-radius:5px;
 }
 section{
 	margin-bottom:50px;
@@ -144,4 +149,34 @@ section>h1{
 section>p{
 	font-size:2em;
 	line-height:2.2em;
+}
+
+.colortoggle{
+	color:#fff;
+}
+
+
+@media screen and (max-width:1024px){
+	.box_a article{
+		right:50px;
+		width:25%;
+	}
+	section>h1{
+		font-size:2em;
+		margin-bottom:20px;
+	}
+	section>p{
+		font-size:1.5em;
+		line-height:2em;
+	}
+}
+@media screen and (max-width:900px){
+	.box_a article{
+		position:static;
+		top:0;
+		width:400px;
+	}
+	.box{
+		width:400px;
+	}
 }

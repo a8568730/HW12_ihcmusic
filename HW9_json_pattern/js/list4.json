@@ -1,22 +1,28 @@
 [
 	{
-		"pic": "images/dice_shinya.jpg",
-		"title": "dotted 01",
-		"author": "ThulaMarquise"
-	},
-	{
-		"pic": "images/inline_01.jpg",
+		"pic": "images/paper/inline_01.jpg",
 		"title": "inline 01",
 		"author": "ThulaMarquise"
 	},
 	{
-		"pic": "images/inline_02.jpg",
+		"pic": "images/paper/inline_02.jpg",
 		"title": "inline 02",
 		"author": "ThulaMarquise"
 	},
 	{
-		"pic": "images/bluish_paper.jpg",
-		"title": "paper style",
+		"pic": "images/paper/bluish_paper.jpg",
+		"title": "paper rough",
+		"author": "ThulaMarquise"
+	},
+	{
+		"pic": "images/paper/old_paper_background.jpg",
+		"title": "paper rough",
+		"author": ""
+	},
+	{
+		"pic": "images/paper/dice_shinya.jpg",
+		"title": "dotted 01",
 		"author": "ThulaMarquise"
 	}
+	
 ]
