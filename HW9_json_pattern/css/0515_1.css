@@ -38,8 +38,12 @@ body{
 	text-indent:20px;
 	text-align:left;
 	color:#fff;
-	font-size:4em;
-	line-height:1.5em;
+	/*font-size:4em;
+	line-height:1.5em;*/
+	font-family: 'Rancho', cursive;
+	font-size:6em;
+	letter-spacing:2px;
+	line-height:1.1em;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 }
@@ -48,19 +52,13 @@ body{
 	text-indent:20px;
 	font-size:1.4em;
 	color:#FFDF00;/*#007319*/
-	
+
 }
 .ba{
 	position:relative;
 	top:50px;
 	width:50%;
 	height:40px;
-	background:#fcfcfc; /* For Safari 5.1 to 6.0 */
-	border:1px solid #eaeaea;
-	color:rgba(0,0,0,0.5);
-	font-family:"微軟正黑體", "Microsoft JhengHei";
-	font-size:1.5em;
-	line-height:40px;
 }
 .ba:nth-child(odd){
 	float:left;
@@ -79,13 +77,6 @@ body{
 .box_b_b > #b_1{
 	border-top:1px solid #eaeaea;
 }
-.ba:hover, .cb{
-	background:#fefefe;
-	color:rgba(0,0,0,1)	;
-	box-shadow:1px 1px 5px rgba(0,0,0,0.15);
-	z-index:5;
-}
-
 
 /*----------------------*/
 .out{
@@ -124,42 +115,71 @@ body{
 	text-align:center;
 }
 .text > h2{
-	font-weight:700;
+	font-family: 'Rancho', cursive;
+	font-size:2em;
+	letter-spacing:1px;
 	line-height:30px;
 }
 .text > p{
+	font-size:1.11111em;
 	line-height:20px;
+	margin-bottom:20px;
+	color:#555;
 }
 .box_a article{
 	position:fixed;
 	right:125px;
 	top:200px;
-	width:37%;
+	width:30%;
+	min-width:500px;
+	min-height:400px;
 	padding:15px;
-	background:rgba(255,255,255,0.4);
+	background:rgba(255,255,255,0.6);
 	border-radius:5px;
 }
 section{
 	margin-bottom:50px;
 }
 section>h1{
-	font-size:2.5em;
+	font-size:2.2em;
 	margin-bottom:20px;
 }
 section>p{
-	font-size:2em;
-	line-height:2.2em;
+	font-size:1.8em;
+	line-height:2.1em;
 }
 
 .colortoggle{
 	color:#fff;
+}
+/*---------button--------*/
+button{
+	font-family:Verdana, Geneva, sans-serif;
+}
+.ch{
+	font-family:"微軟正黑體", "Microsoft JhengHei";
+}
+.btn{
+	background:#fcfcfc; /* For Safari 5.1 to 6.0 */
+	border:1px solid #eaeaea;
+	color:rgba(0,0,0,0.5);
+	font-size:1.5em;
+	line-height:40px;
+	
+}
+.btn:hover, .cb{
+	background:#fefefe;
+	color:rgba(0,0,0,1)	;
+	box-shadow:1px 1px 5px rgba(0,0,0,0.15);
+	z-index:5;
 }
 
 
 @media screen and (max-width:1024px){
 	.box_a article{
 		right:50px;
-		width:25%;
+		width:20%;
+		height:500px;
 	}
 	section>h1{
 		font-size:2em;

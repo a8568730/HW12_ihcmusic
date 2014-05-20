@@ -38,7 +38,7 @@ $(document).ready(function(){
 			$('.box_a').css({"display":"none"}).fadeIn();
 		});
 		
-		$('.box_a').on('click','.vbtn',function(){
+		$('.box_a').on('click','.view',function(){
 			//alert('haha');
 			var $pic = $(this).closest('.text').prev(); 
 			var id   = $pic.attr('id');
@@ -47,13 +47,14 @@ $(document).ready(function(){
 			$('.pic').css('opacity',1);
 			$pic.css('opacity',0);
 			$('.out').css('backgroundImage',src);
+			$('.box_a').find('.view').removeClass('cb');
+			$(this).addClass('cb');
 			
 		});
 		$('article').on('click','button',function(){
 			alert('hoho');
 			var $article = $(this).closest('article');
 				$article.toggleClass('colortoggle');
-			
 		});
 });
 
@@ -114,7 +115,7 @@ function getcon(filename){
 			html += '<div class="text">';
 			html += '<h2>' + en['title'] + '</h2>';
 			html += '<p>' + en['author'] + '</p>';
-			html += '<button class="vbtn">View</button>';
+			html += '<button class="btn view">View</button>';
 			html += '</div></div>';
 			
 			$('.box_a').append(html);
