@@ -1,0 +1,44 @@
+[
+	{
+		"pic": "images/p1.png",
+		"title": "Roses Cake",
+		"size": "8吋 / 10吋",
+		"content": "香草蛋糕、巧克力慕斯、白巧克力慕斯",
+		"other": "適合8-10人食用"
+	},
+	{
+		"pic": "images/p2.png",
+		"title": "Animal Cake",
+		"size": "8吋 / 10吋 / 12吋",
+		"content": "香草蛋糕、白巧克力慕斯",
+		"other": "適合8-12人食用"
+	},
+	{
+		"pic": "images/p3.png",
+		"title": "Minion Cake",
+		"size": "6吋",
+		"content": "巧克力蛋糕",
+		"other": "適合6人食用"
+	},
+	{
+		"pic": "images/p4.png",
+		"title": "Bird Cake",
+		"size": "8吋",
+		"content": "草莓蛋糕、芋頭蛋糕",
+		"other": "適合8人食用"
+	},
+	{
+		"pic": "images/p5.png",
+		"title": "House Cake",
+		"size": "10吋 / 12吋",
+		"content": "抹茶蛋糕、白巧克力",
+		"other": "適合10-12人食用"
+	},
+	{
+		"pic": "images/p6.png",
+		"title": "Owl Cake",
+		"size": "10吋 / 12吋",
+		"content": "抹茶蛋糕、白巧克力",
+		"other": "適合10-12人食用"
+	}
+]

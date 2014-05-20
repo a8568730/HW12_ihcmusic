@@ -1,0 +1,23 @@
+[
+	{
+		"pic": "images/c1.png",
+		"title": "巧克甜心",
+		"size": "10片包裝",
+		"content": "巧克力餅乾，肉桂粉",
+		"other": ""
+	},
+	{
+		"pic": "images/c2.png",
+		"title": "楓之森",
+		"size": "5片包裝",
+		"content": "檸檬餅乾，咖啡薄片",
+		"other": ""
+	},
+	{
+		"pic": "images/c3.png",
+		"title": "蔓越莓之戀",
+		"size": "10片包裝",
+		"content": "蔓越莓餅乾、巧克力球",
+		"other": ""
+	}
+]

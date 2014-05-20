@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url("reset.css");
+/* CSS Document */
+html, body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體", "Microsoft JhengHei";
+	background:#CCC;
+}
+body{
+	overflow-x: hidden;
+	font-size:62.5%; /*10px/16px*/
+	background:#fff url('../images/basechecks.png');	
+}
+
+.box_b_b{
+	position:fixed;
+	width:250px;
+	height:auto;
+	background:-webkit-linear-gradient(0deg, #fdfdfd, #fefefe);
+	background:-moz-linear-gradient(0deg, #fdfdfd, #fefefe);
+	background:-ms-linear-gradient(0deg, #fdfdfd, #fefefe);
+	background:-o-linear-gradient(0deg, #fdfdfd, #fefefe);
+	background:linear-gradient(0deg, #fdfdfd, #fefefe);
+	border-left:6px solid #53BF6B;
+	z-index:999;
+}
+.box_b_b > #header{
+	position:relative;
+	top:50px;
+	width:100%;
+	height:120px;
+	margin-bottom:10px;
+	padding:10px 0px 10px 20px;
+	text-align:left;
+	background:#53BF6B;
+	color:#fff;
+	font-size:2.5em;
+	line-height:50px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	
+}
+.ba{
+	position:relative;
+	top:50px;
+	width:100%;
+	height:40px;
+	line-height:50px;
+	background:#fcfcfc; /* For Safari 5.1 to 6.0 */
+	border:1px solid #eaeaea;
+	border-top:none;
+	font-size:1.5em;
+	text-indent:20px;
+	color:rgba(0,0,0,0.7);
+}
+.box_b_b > #b_1{
+	border-top:1px solid #eaeaea;
+}
+.ba:hover, .cb{
+	left:10px;
+	background:#000;
+	background:#fefefe;
+	color:rgba(0,0,0,1);
+	box-shadow:1px 1px 5px rgba(0,0,0,0.15);
+}
+
+
+/*----------------------*/
+.out{
+	min-height:700px;
+	min-width:600px;
+}
+.box_a{
+	position: relative;
+	padding:20px;
+	padding-left:100px;
+	display:none;
+}
+.box{
+	width:500px;
+	height:300px;
+	margin-right:20px;
+	margin-top:20px;
+	box-shadow:1px 1px 3px rgba(0,0,0,0.3);
+}
+.pic{
+	float:left;
+	width:70%;
+	height:100%;
+}
+.box, .pic, .text{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.box .text{
+	width:30%;
+	height:100%;
+	padding:10px;
+	background:#fff;
+	float:right;
+}
+.text > h2{
+	font-weight:700;
+	line-height:30px;
+	text-align:center;
+}
+.text > p{
+	line-height:20px;
+}
+.box_a article{
+	float:right;
+}
