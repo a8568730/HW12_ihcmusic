@@ -6,60 +6,81 @@ html, body{
 	background:#CCC;
 }
 body{
-	overflow-x: hidden;
 	font-size:62.5%; /*10px/16px*/
 	background:#fff url('../images/basechecks.png');	
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
 }
 
 .box_b_b{
 	position:fixed;
+	left:20px;
 	width:250px;
 	height:auto;
-	background:-webkit-linear-gradient(0deg, #fdfdfd, #fefefe);
+/*	background:-webkit-linear-gradient(0deg, #fdfdfd, #fefefe);
 	background:-moz-linear-gradient(0deg, #fdfdfd, #fefefe);
 	background:-ms-linear-gradient(0deg, #fdfdfd, #fefefe);
 	background:-o-linear-gradient(0deg, #fdfdfd, #fefefe);
 	background:linear-gradient(0deg, #fdfdfd, #fefefe);
-	border-left:6px solid #53BF6B;
+	*/
+	/*border-left:6px solid #53BF6B;*/
+	background:#53BF6B;
 	z-index:999;
 }
-.box_b_b > #header{
-	position:relative;
-	top:50px;
+.box_b_b > header{
 	width:100%;
 	height:120px;
-	margin-bottom:10px;
-	padding:10px 0px 10px 20px;
+	margin-top:50px;
+	text-indent:20px;
 	text-align:left;
-	background:#53BF6B;
 	color:#fff;
 	font-size:2.5em;
 	line-height:50px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 }
+.box_b_b > p {
+	margin-top:20px;
+	text-indent:20px;
+	font-size:1.2em;
+}
 .ba{
 	position:relative;
 	top:50px;
-	width:100%;
+	width:50%;
 	height:40px;
-	line-height:50px;
 	background:#fcfcfc; /* For Safari 5.1 to 6.0 */
 	border:1px solid #eaeaea;
-	border-top:none;
+	color:rgba(0,0,0,0.5);
+	font-family:"微軟正黑體", "Microsoft JhengHei";
 	font-size:1.5em;
-	text-indent:20px;
-	color:rgba(0,0,0,0.7);
+	line-height:40px;
+}
+.ba:nth-child(odd){
+	float:left;
+}
+.ba:nth-child(even){
+	float:right;
+}
+.ba:nth-child(n+2){
+	border-top:none;
+}
+.box_b_b::after{
+	content:'.';
+	opacity:0;
+	clear:both;
 }
 .box_b_b > #b_1{
 	border-top:1px solid #eaeaea;
 }
 .ba:hover, .cb{
-	left:10px;
-	background:#000;
 	background:#fefefe;
-	color:rgba(0,0,0,1);
+	color:rgba(0,0,0,1)	;
 	box-shadow:1px 1px 5px rgba(0,0,0,0.15);
+	z-index:5;
 }
 
 
@@ -67,18 +88,19 @@ body{
 .out{
 	min-height:700px;
 	min-width:600px;
+	background:#fff url('../images/basechecks.png');	
+	
 }
 .box_a{
 	position:relative;
 	padding:20px;
-	padding-left:100px;
+	padding-left:350px;
 	z-index:0;
 }
 .box{
 	width:500px;
 	height:300px;
-	margin-right:20px;
-	margin-top:20px;
+	margin-top:30px;
 	box-shadow:1px 1px 3px rgba(0,0,0,0.3);
 }
 .pic{
@@ -109,4 +131,17 @@ body{
 	position:fixed;
 	right:150px;
 	top:200px;
+	width:40%;
+	
+}
+section{
+	margin-bottom:50px;
+}
+section>h1{
+	font-size:2.5em;
+	margin-bottom:20px;
+}
+section>p{
+	font-size:2em;
+	line-height:2.2em;
 }

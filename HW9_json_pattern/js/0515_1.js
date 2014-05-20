@@ -6,7 +6,7 @@ $(document).ready(function(){
 		
 		
 	    $(window).bind("load resize", function() {
-			re_win();
+			//re_win();
 		});
 		
 		//ex0.load text to layout
@@ -41,7 +41,7 @@ $(document).ready(function(){
 			
 			$('.pic').css('opacity',1);
 			$pic.css('opacity',0);
-			$('body').css('backgroundImage',src);
+			$('.out').css('backgroundImage',src);
 			
 		});
 });
@@ -60,12 +60,12 @@ function re_win(){
 	$('.out').width(m_win);
 	$('.out').offset({top:0,left:250});
 	*/
-	$('.box_b_b').height(h);
+	/*$('.box_b_b').height(h);
 	$('.out').height(h);			
 	$('.out').width(w);
 	$('.box_a').width(m_win);
-	
-		
+	*/
+	$('.box_b_b').height(h);
 	$('.out').offset({top:0,left:m_w});
 };
 	
