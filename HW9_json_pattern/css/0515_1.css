@@ -37,7 +37,6 @@ body{
 	line-height:50px;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
-	
 }
 .ba{
 	position:relative;
@@ -70,10 +69,10 @@ body{
 	min-width:600px;
 }
 .box_a{
-	position: relative;
+	position:relative;
 	padding:20px;
 	padding-left:100px;
-	display:none;
+	z-index:0;
 }
 .box{
 	width:500px;
@@ -92,20 +91,22 @@ body{
 	-moz-box-sizing:border-box;
 }
 .box .text{
+	float:right;
 	width:30%;
 	height:100%;
 	padding:10px;
 	background:#fff;
-	float:right;
+	text-align:center;
 }
 .text > h2{
 	font-weight:700;
 	line-height:30px;
-	text-align:center;
 }
 .text > p{
 	line-height:20px;
 }
 .box_a article{
-	float:right;
+	position:fixed;
+	right:150px;
+	top:200px;
 }

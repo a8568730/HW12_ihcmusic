@@ -1,6 +1,10 @@
 // JavaScript Document
+var $article;
 $(document).ready(function(){
-	
+		
+		$article = $('.box_a').html();
+		
+		
 	    $(window).bind("load resize", function() {
 			re_win();
 		});
@@ -22,13 +26,14 @@ $(document).ready(function(){
 					break;	
 			}
 			$(this).addClass('cb').siblings().removeClass('cb');
+			$('.box_a').prepend($article);	
 			
 			//瘥活�賡�閮苓isplay, ����洵銝�活��fadeIn��
 			$('.box_a').css({"display":"none"}).fadeIn();
 		});
 		
 		$('.box_a').on('click','.vbtn',function(){
-			$('.box_a').show();
+			//$('.box_a').show();
 			//alert('haha');
 			var $pic = $(this).closest('.text').prev(); 
 			var id   = $pic.attr('id');
@@ -108,6 +113,7 @@ function getcon(filename){
 								 });
 			
 		});
+		$('.box_a').prepend($article);
 		return false;
 	});
 };	
