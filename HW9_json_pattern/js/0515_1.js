@@ -51,7 +51,7 @@ $(document).ready(function(){
 			$(this).addClass('cb');		
 		});
 
-		addviewclick();
+		togglecolor();
 });
 
 function re_win(){
@@ -122,14 +122,19 @@ function getcon(filename){
 			
 		});
 		$('.box_a').prepend($article);
-		addviewclick();
+		togglecolor();
 		return false;
 	});
 };	
 
-function addviewclick(){
+function togglecolor(){
 	$('article').on('click','button',function(){
 		var $article = $(this).closest('article');
 			$article.toggleClass('colortoggle');
+		if($(this).hasClass('blue'))
+			$(this).text('black');
+		else
+			$(this).text('white');
+		$(this).toggleClass('blue');
 	});
 };
