@@ -156,6 +156,12 @@ section>p{
 /*---------button--------*/
 button{
 	font-family:Verdana, Geneva, sans-serif;
+	font-size:1.5em;
+	background:#fcfcfc;
+	border:none;
+}
+button:active{
+	background:#FFDF00;
 }
 .ch{
 	font-family:"微軟正黑體", "Microsoft JhengHei";
@@ -165,16 +171,21 @@ button{
 	border:1px solid #eaeaea;
 	color:rgba(0,0,0,0.5);
 	font-size:1.5em;
-	line-height:40px;
-	
+	line-height:40px;	
 }
-.btn:hover, .cb{
+.btn:hover,.btn:active, .cb{
 	background:#fefefe;
-	color:rgba(0,0,0,1)	;
+	color:rgba(0,0,0,1);
 	box-shadow:1px 1px 5px rgba(0,0,0,0.15);
 	z-index:5;
 }
-
+.btn.blue{
+	background:#0772A1;
+	color:rgb(240,240,240);
+}
+.btn.blue:hover{
+	color:#fff;
+}
 
 @media screen and (max-width:1024px){
 	.box_a article{
