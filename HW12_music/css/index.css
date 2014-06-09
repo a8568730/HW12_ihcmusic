@@ -30,11 +30,13 @@ html, body{
 #head-container .title{
 	display:inline-block;
 	color:#fff;
+	font-size:100%;
 }
 #ss-container{
 	height:100%;
 	display:inline-block;
 	float:right;
+	line-height:2.3em;
 }
 /*#search-icon,#sign-icon{
 	color:#fff;
@@ -43,12 +45,20 @@ html, body{
 	font-size:0.8em;
 }*/
 #search{
+	vertical-align:middle;
+	width:30px;
+	margin-right:0.5em;
 	border-radius:20px;
 	padding:4px 10px;
 	background:#fff url('../images/lens.png') no-repeat;
-	background-size:15%;
+	background-size:40%;
 	background-position:10px 2px;
 	box-shadow:none;
+	-moz-transition:all 0.3s linear;
+}
+#search:focus{
+	width:50px;
+	background-size:30%;
 }
 #sign-container{
 	position:absolute;
