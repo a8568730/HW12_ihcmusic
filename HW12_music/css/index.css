@@ -9,15 +9,14 @@
 html, body{
 	height:100%;
 	font-size:62.5%;
-	font-family:Verdana, Geneva, sans-serif, "�L�n������", "Microsoft JhengHei";
+	font-family:"Helvetica Neue",Verdana, Geneva, "微軟正黑體","Microsoft JhengHei", sans-serif;
 }
 #head-container{
 	position:relative;
 	height:50px;
 	background: #462B83;
-	font-size:3em;
+	font-size:3em;/*30px*/
 }
-/*#head-container:before{*/
 #helper{
 	display:inline-block;
     height:100%;
@@ -44,6 +43,17 @@ html, body{
 	height:16px;
 	font-size:0.8em;
 }*/
+#sign-btn{
+	margin-right:10px;
+	width:40px;
+	height:40px;
+	background:#7D60C1;
+	box-shadow:none;
+	border:none;
+}
+.btn-active{
+	color:#fff;
+}
 #search{
 	vertical-align:middle;
 	width:30px;
@@ -75,26 +85,31 @@ html, body{
 	width:100%;
 	height:30px;
 	padding:10px 0;
-	font-size:inherit;
+	line-height:30px;
+	text-indent:1em;
+	font-size:1em;/*30px*/
 }
 #sign-group a:hover{
 	background: #7455BC;
 }
+
+
 #head-nav{
 	clear:both;
 	margin-top:65px;
-	font-size:2em;
 	width:100%;
+	font-size:2.5em;/*25px*/
 }
 #head-nav a{
 	float:left;
+	display:block;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	display:block;
 	width:50%;
 	height:100px;
-	padding:10px 0;
+	padding-top:20px;
+	line-height:30px;
 	border:1px solid #aaa;
 	text-align:center;
 	vertical-align:middle;
@@ -108,4 +123,9 @@ html, body{
 }
 #head-nav a:nth-child(4){
 	border-color:transparent #aaa #aaa transparent;
+}
+
+#head-nav span{
+	display:inline-block;
+	width:100%;
 }
