@@ -112,7 +112,6 @@ html, body{
 	line-height:30px;
 	border:1px solid #aaa;
 	text-align:center;
-	vertical-align:middle;
 }
 #head-nav a:nth-child(2){
 	border-color:#aaa #aaa #aaa transparent;
