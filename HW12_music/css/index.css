@@ -9,18 +9,28 @@
 html, body{
 	height:100%;
 	font-size:62.5%;
-	font-family:Verdana, Geneva, sans-serif, "·L³n¥¿¶ÂÅé", "Microsoft JhengHei";
+	font-family:Verdana, Geneva, sans-serif, "ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "Microsoft JhengHei";
 }
 #head-container{
 	position:relative;
 	height:50px;
-	background:black;
+	background: #462B83;
 	font-size:5em;
+	padding:10px 0 0;
+}
+#head-container::before{
+	content:'.';
+	display:inline-block;
+	height:100%;
+	vertical-align:middle;
+	opacity:0;
 }
 #logo{
-	height:80%;
-	vertical-align:bottom;
-	margin-left:10px;
+	height:60%;
+}
+#head-container .title{
+	display:inline-block;
+	color:#fff;
 }
 #ss-container{
 	height:100%;
