@@ -10,9 +10,10 @@ $(document).ready(function(){
 	var window = $("#window");
 	var wrapper = $("#wrapper");
 	
-	$("#ss-container").find("button").on('click',function(){
+	$("#ss-container").find("sign-btn").on('click',function(){
 		$(this).toggleClass("btn-active");
 		//var signcontain = $(this).closest("#ss-container").next();
+		alert('ha');
 		var signcontain = $("#sign-group");
 		signcontain.slideToggle('fast');
 	});
@@ -20,9 +21,13 @@ $(document).ready(function(){
 	$("#head-nav").find("a").on('click',function(){
 		var h = window.height();
 		wrapper.offset({'top':-h});
+		
+		var list = $(this).find(".title").text();
+		$("#page2").find("h1").text(list);
 	});
 	
-	$("#return").on('click',function(){
-		wrapper.offset({'top':0});
+	$(".return").on('click',function(){
+		var h = window.height();
+		wrapper.css("top", "+=" + h + "px");
 	});
 });

@@ -45,18 +45,6 @@ html, body{
 	height:16px;
 	font-size:0.8em;
 }*/
-#sign-btn{
-	margin-right:10px;
-	width:40px;
-	height:40px;
-	background:#7D60C1;
-	box-shadow:none;
-	border:none;
-	padding:0 5px;
-}
-.btn-active{
-	color:#fff;
-}
 #search{
 	vertical-align:middle;
 	width:30px;
@@ -73,9 +61,21 @@ html, body{
 	width:50px;
 	background-size:30%;
 }
+#sign-btn{
+	margin-right:10px;
+	width:40px;
+	height:40px;
+	background:#7D60C1;
+	box-shadow:none;
+	border:none;
+	padding:0 5px;
+}
+.btn-active{
+	color:#fff;
+}
 #sign-group{
 	display:none; 
-	position:absolute;
+	position:relative;
 	top:100%;
 	width:100%;
 	height:200%;
@@ -154,4 +154,16 @@ div[id^="page"]{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
+}
+
+#page2 p{
+	color:#fff;
+	display:block;
+	width:100%;
+	height:30px;
+	padding:10px 0;
+	border:1px solid #ccc;
+	line-height:30px;
+	text-indent:1em;
+	font-size:1em;/*30px*/
 }
