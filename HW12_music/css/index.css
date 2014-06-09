@@ -15,18 +15,17 @@ html, body{
 	position:relative;
 	height:50px;
 	background: #462B83;
-	font-size:5em;
-	padding:10px 0 0;
+	font-size:3em;
 }
-#head-container::before{
-	content:'.';
+/*#head-container:before{*/
+#helper{
 	display:inline-block;
-	height:100%;
-	vertical-align:middle;
-	opacity:0;
+    height:100%;
+    vertical-align:middle;
 }
 #logo{
 	height:60%;
+	vertical-align:middle;
 }
 #head-container .title{
 	display:inline-block;
