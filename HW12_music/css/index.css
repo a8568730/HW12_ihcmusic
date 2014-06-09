@@ -12,7 +12,9 @@ html, body{
 	font-family:"Helvetica Neue",Verdana, Geneva, "微軟正黑體","Microsoft JhengHei", sans-serif;
 }
 #head-container{
-	position:relative;
+	position:fixed;
+	z-index:10000;
+	width:100%;
 	height:50px;
 	background: #462B83;
 	font-size:3em;/*30px*/
@@ -50,6 +52,7 @@ html, body{
 	background:#7D60C1;
 	box-shadow:none;
 	border:none;
+	padding:0 5px;
 }
 .btn-active{
 	color:#fff;
@@ -111,6 +114,7 @@ html, body{
 	padding-top:20px;
 	line-height:30px;
 	border:1px solid #aaa;
+	color:#756189;
 	text-align:center;
 }
 #head-nav a:nth-child(2){
@@ -127,4 +131,27 @@ html, body{
 #head-nav span{
 	display:inline-block;
 	width:100%;
+}
+
+
+
+#window{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#wrapper{
+	position:relative;
+	top:0;
+	left:0;
+}
+div[id^="page"]{
+	clear:both;
+	position:relative;
+	width:100%;
+	height:480px;
+	padding-top:50px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
