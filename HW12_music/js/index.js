@@ -10,10 +10,10 @@ $(document).ready(function(){
 	var window = $("#window");
 	var wrapper = $("#wrapper");
 	
-	$("#ss-container").find("sign-btn").on('click',function(){
+	$("#ss-container").find("#sign-btn").on('click',function(){
 		$(this).toggleClass("btn-active");
 		//var signcontain = $(this).closest("#ss-container").next();
-		alert('ha');
+		//alert('ha');
 		var signcontain = $("#sign-group");
 		signcontain.slideToggle('fast');
 	});
@@ -23,7 +23,7 @@ $(document).ready(function(){
 		wrapper.offset({'top':-h});
 		
 		var list = $(this).find(".title").text();
-		$("#page2").find("h1").text(list);
+		//$("#page2").find("h1").text(list);
 	});
 	
 	$(".return").on('click',function(){
