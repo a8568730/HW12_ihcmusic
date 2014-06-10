@@ -23,7 +23,7 @@ $(document).ready(function(){
 		wrapper.offset({'top':-h});
 		
 		var list = $(this).find(".title").text();
-		//$("#page2").find("h1").text(list);
+		$("#page2").find("h1").text(list);
 	});
 	
 	$(".return").on('click',function(){
