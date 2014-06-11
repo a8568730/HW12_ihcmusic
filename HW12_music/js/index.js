@@ -12,6 +12,7 @@ $(document).ready(function(){
 	
 	togglesign();
 	gotolist(window, wrapper);
+	gotolyrics(window, wrapper);
 	backtoprev(window, wrapper);
 });
 
@@ -30,14 +31,23 @@ function gotolist(window ,wrapper){
 		var h = window.height();
 		wrapper.offset({'top':-h});
 		
-		var list = $(this).find(".title").text();
-		$("#page2").find("h1").text(list);
+		//music type as title in page2
+		var title = $(this).find(".title").text();
+		$("#page2").find("h1").text(title);
 	});
 };
-
+function gotolyrics(window ,wrapper){
+	$("#page2").find("p").on("click",function(){
+		var h = window.height();
+		wrapper.offset({'top':""-"h});
+		
+		var name = $(this).data("song");
+		$("#page3").find("h1").text(name);
+	});
+}
 function backtoprev(window, wrapper){
 	$(".return").on('click',function(){
 		var h = window.height();
-		wrapper.css("top", "+=" + h + "px");
+		wrapper.css("top", "+=" + h);
 	});
 }
