@@ -10,17 +10,20 @@ $(document).ready(function(){
 	var window = $("#window");
 	var wrapper = $("#wrapper");
 	
-	$("#ss-container").find("#sign-btn").on('click',function(){
-		$(this).toggleClass("btn-active");
-		var signcontain = $("#sign-group");
-		signcontain.slideToggle('fast');
-	});
-	
+	togglesign();
 	gotolist(window, wrapper);
 	backtoprev(window, wrapper);
 });
 
 
+
+function togglesign(){
+	$("#ss-container").find("#sign-btn").on('click',function(){
+		$(this).toggleClass("btn-active");
+		var signcontain = $("#sign-group");
+		signcontain.slideToggle('fast');
+	});
+};
 
 function gotolist(window ,wrapper){
 	$("#head-nav").find("a").on('click',function(){
