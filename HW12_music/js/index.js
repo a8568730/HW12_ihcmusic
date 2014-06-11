@@ -12,12 +12,17 @@ $(document).ready(function(){
 	
 	$("#ss-container").find("#sign-btn").on('click',function(){
 		$(this).toggleClass("btn-active");
-		//var signcontain = $(this).closest("#ss-container").next();
-		//alert('ha');
 		var signcontain = $("#sign-group");
 		signcontain.slideToggle('fast');
 	});
 	
+	gotolist(window, wrapper);
+	backtoprev(window, wrapper);
+});
+
+
+
+function gotolist(window ,wrapper){
 	$("#head-nav").find("a").on('click',function(){
 		var h = window.height();
 		wrapper.offset({'top':-h});
@@ -25,9 +30,11 @@ $(document).ready(function(){
 		var list = $(this).find(".title").text();
 		$("#page2").find("h1").text(list);
 	});
-	
+};
+
+function backtoprev(window, wrapper){
 	$(".return").on('click',function(){
 		var h = window.height();
 		wrapper.css("top", "+=" + h + "px");
 	});
-});
+}
