@@ -25,7 +25,6 @@ function togglesign(){
 		signcontain.slideToggle('fast');
 	});
 };
-
 function gotolist(window ,wrapper){
 	$("#head-nav").find("a").on('click',function(){
 		var h = window.height();

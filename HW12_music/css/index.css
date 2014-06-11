@@ -137,15 +137,26 @@ div[id^="page"]{
 	line-height:30px;
 	text-align:center;
 }
+#head-nav a:nth-child(1){
+	color:#E6382B;
+}
 #head-nav a:nth-child(2){
+	color:#B5209F;
 	border-color:#aaa #aaa #aaa transparent;
 }
 #head-nav a:nth-child(3),
 #head-nav a:nth-child(5){
 	border-color:transparent #aaa #aaa #aaa;
 }
+#head-nav a:nth-child(3){
+	color:#0757B3;
+}
 #head-nav a:nth-child(4){
+	color:#387D12;
 	border-color:transparent #aaa #aaa transparent;
+}
+#head-nav a:nth-child(5){
+	color:#F0622C;
 }
 #head-nav span{
 	display:inline-block;
@@ -154,7 +165,9 @@ div[id^="page"]{
 #head-nav a:hover{
 	background:#FFEB7F;
 }
-
+#head-nav a:nth-child(1):hover{
+	
+}
 
 #songlist{
 	height:390px;/*480px-50px-40px*/
