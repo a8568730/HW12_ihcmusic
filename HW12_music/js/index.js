@@ -29,7 +29,7 @@ function togglesign(){
 function gotolist(window ,wrapper){
 	$("#head-nav").find("a").on('click',function(){
 		var h = window.height();
-		wrapper.offset({'top':-h});
+		wrapper.css("top", "-=" + h);
 		
 		//music type as title in page2
 		var title = $(this).find(".title").text();
@@ -39,7 +39,7 @@ function gotolist(window ,wrapper){
 function gotolyrics(window ,wrapper){
 	$("#page2").find("p").on("click",function(){
 		var h = window.height();
-		wrapper.offset({'top':""-"h});
+		wrapper.css("top", "-=" + h);
 		
 		var name = $(this).data("song");
 		$("#page3").find("h1").text(name);
