@@ -54,10 +54,13 @@ function gotolist(view ,wrapper){
 function gotolyrics(view ,wrapper){
 	$("#page2").find("p").on("click",function(){
 		var h = view.height();
-		wrapper.css("top", "-=" + h);
-		
+		var w = view.width();
+		if( w < 481 ){
+			wrapper.css("top", "-=" + h);
+		}
 		var name = $(this).data("song");
 		$("#page3").find("h1").text(name);
+		
 	});
 }
 function backtoprev(view, wrapper){
