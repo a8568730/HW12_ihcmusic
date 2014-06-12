@@ -77,7 +77,9 @@ button{
 	color:#fff;
 }
 #sign-group{
-	display:none; 
+	display:none;
+	position:relative;
+	z-index:10; 
 	width:100%;
 	height:200%;
 	background: #7D60C1;
@@ -177,7 +179,7 @@ div[id^="page"]{
 #page1-nav a:hover{
 	background:#FFEB7F;
 }
-
+#footer{display:none;}
 
 #songlist,
 #lyrics{
@@ -251,6 +253,11 @@ div[id^="page"]{
 
 
 @media only screen and (min-width: 481px) {
+	#footer{
+		width:100%;
+		height:50px;
+	}
+	
 	div[id^="page"]{
 		
 	}
