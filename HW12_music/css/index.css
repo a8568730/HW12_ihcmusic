@@ -129,11 +129,11 @@ div[id^="page"]{
 	/*http://wallpoper.com/*/
 	background-size:cover;
 }
-#head-nav{
+#page1-nav{
 	clear:both;
 	width:100%;
 }
-#head-nav a{
+#page1-nav a{
 	float:left;
 	display:block;
 	-webkit-box-sizing:border-box;
@@ -148,33 +148,33 @@ div[id^="page"]{
 	line-height:1.4em;
 	text-align:center;
 }
-#head-nav a:nth-child(1){
+#page1-nav a:nth-child(1){
 	color:#E6382B;
 }
-#head-nav a:nth-child(2){
+#page1-nav a:nth-child(2){
 	color:#B5209F;
 	border-color:#aaa #aaa #aaa transparent;
 }
-#head-nav a:nth-child(3),
-#head-nav a:nth-child(5){
+#page1-nav a:nth-child(3),
+#page1-nav a:nth-child(5){
 	border-color:transparent #aaa #aaa #aaa;
 }
-#head-nav a:nth-child(3){
+#page1-nav a:nth-child(3){
 	color:#0757B3;
 }
-#head-nav a:nth-child(4){
+#page1-nav a:nth-child(4){
 	color:#387D12;
 	border-color:transparent #aaa #aaa transparent;
 }
-#head-nav a:nth-child(5){
+#page1-nav a:nth-child(5){
 	color:#F0622C;
 	width:100%;
 }
-#head-nav span{
+#page1-nav span{
 	display:inline-block;
 	width:100%;
 }
-#head-nav a:hover{
+#page1-nav a:hover{
 	background:#FFEB7F;
 }
 

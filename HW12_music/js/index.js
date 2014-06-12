@@ -42,7 +42,7 @@ function togglesign(){
 	});
 };
 function gotolist(view ,wrapper){
-	$("#head-nav").find("a").on('click',function(){
+	$("#page1-nav").find("a").on('click',function(){
 		var h = view.height();
 		wrapper.css("top", "-=" + h);
 		
