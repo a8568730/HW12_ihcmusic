@@ -73,7 +73,15 @@ function rewin(){
 		var w = window.innerWidth; 
 		var h = window.innerHeight; 
 		
-		$("body>span").text("size: " + w + "," + h);
+		$("body").find("span:first").text("size: " + w + "," + h);
+		
+		//$("#window").height(h);
+		//$("div[id^='page']")
+		var view = $("#window");   
+		var h_head = view.prev().height();
+		var h_view = h - h_head;
+		view.height(h_view);
+		$("div[id^='page']").height(h_view);
 	});
 	
 }
