@@ -243,7 +243,7 @@ div[id^="page"]{
 	text-align:center;
 }
 
-
+#pad-return{display:none;}
 
 
 
@@ -278,6 +278,8 @@ div[id^="page"]{
 	#page3 .return{
 		display:none;
 	}
+	#pad-return{display:block;width:100%;height:40px;}
+	#pad-return .return{background:red;font-size:2.8em;}
 	#wrapper{clear:both;}
 }
 @media only screen and (min-width: 769px) {
@@ -306,4 +308,7 @@ div[id^="page"]{
 		margin:0 50px 50px 0;
 	}
 	*/
+	.return{
+		display:none;
+	}
 }
