@@ -7,13 +7,29 @@ $(document).ready(function(){
 			$(this).css('background-image','none');
 		}
 	});*/
-	var window = $("#window");
+	var w = window.innerWidth; 
+	var h = window.innerHeight; 
+	var sizebox = $("<span>").text("size: " + w + "," + h);
+	sizebox.css({
+		"position":"fixed",
+		"top":"0",
+		"left":"0",
+		"z-index":"99999",
+		"font-size":"3em",
+		"background-color":"yellow",
+	});
+	$("body").prepend(sizebox);
+	
+	rewin();
+	
+	var view = $("#window");
 	var wrapper = $("#wrapper");
 	
 	togglesign();
-	gotolist(window, wrapper);
-	gotolyrics(window, wrapper);
-	backtoprev(window, wrapper);
+	gotolist(view, wrapper);
+	gotolyrics(view, wrapper);
+	backtoprev(view, wrapper);
+	
 });
 
 
@@ -25,9 +41,9 @@ function togglesign(){
 		signcontain.slideToggle('fast');
 	});
 };
-function gotolist(window ,wrapper){
+function gotolist(view ,wrapper){
 	$("#head-nav").find("a").on('click',function(){
-		var h = window.height();
+		var h = view.height();
 		wrapper.css("top", "-=" + h);
 		
 		//music type as title in page2
@@ -35,18 +51,29 @@ function gotolist(window ,wrapper){
 		$("#page2").find("h1").text(title);
 	});
 };
-function gotolyrics(window ,wrapper){
+function gotolyrics(view ,wrapper){
 	$("#page2").find("p").on("click",function(){
-		var h = window.height();
+		var h = view.height();
 		wrapper.css("top", "-=" + h);
 		
 		var name = $(this).data("song");
 		$("#page3").find("h1").text(name);
 	});
 }
-function backtoprev(window, wrapper){
+function backtoprev(view, wrapper){
 	$(".return").on('click',function(){
-		var h = window.height();
+		var h = view.height();
 		wrapper.css("top", "+=" + h);
 	});
+}
+
+function rewin(){
+	//$("div[id^='page']")
+	$(window).bind("load resize",function(){
+		var w = window.innerWidth; 
+		var h = window.innerHeight; 
+		
+		$("body>span").text("size: " + w + "," + h);
+	});
+	
 }
