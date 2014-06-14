@@ -197,11 +197,6 @@ div[id^="page"]{
 }
 
 
-#songlist,
-#lyrics{
-	height:345px;/*480px-50px(head)-40px(btn)-35px(h1)=345px*/
-	overflow-y:scroll;
-}
 #page2 h1,
 #page3 h1{
 	-webkit-box-sizing:border-box;
@@ -211,6 +206,11 @@ div[id^="page"]{
 	font-size: 1.2em; /*35px/28px=1.2em  ,1em=28px*/
 	line-height:2em;
 	text-align:center;
+}
+#songlist,
+#lyrics{
+	height:80%;/*480px-50px(head)-40px(btn)-35px(h1)=345px*/
+	overflow-y:scroll;
 }
 #page2 p{
 	display:block;
@@ -240,7 +240,7 @@ div[id^="page"]{
 	z-index:9999;
 	bottom:0;
 	width:100%;
-	height:40px;
+	height:10%;
 	background:#462B83;
 	border:none;
 	color:#fafafa;
