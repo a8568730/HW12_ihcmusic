@@ -113,7 +113,7 @@ button{
 	width:100%;
 }
 div[id^="page"]{
-	clear:both;
+	/*clear:both;*/
 	position:relative;
 	width:100%;
 	/*height:480px;*/
@@ -143,7 +143,7 @@ div[id^="page"]{
 	box-sizing:border-box;
 	width:50%;
 	height:70px;
-	padding-top:3.5%;
+	padding:3.5% 0;
 	background:#fbfbfb;
 	border:1px solid #aaa;
 	color:#756189;
@@ -254,6 +254,8 @@ div[id^="page"]{
 
 
 @media only screen and (min-width: 481px) {
+	#head-nav a{height:20%;}
+	
 	#footer{
 		display:block;
 		position:relative;
@@ -268,17 +270,19 @@ div[id^="page"]{
 	}
 	#page2{
 		float:left;
-		width:40%;
+		width:50%;
 	}
 	#page3{
-		float:right;
-		width:40%;
+		float:left;
+		width:50%;
+		height:200px;
+		background:#ffcc00;
 	}
 	#page2 .return,
 	#page3 .return{
 		display:none;
 	}
-	#pad-return{display:block;width:100%;height:40px;}
+	#pad-return{clear:both;display:block;width:100%;height:40px;position:relative;bottom:40px;z-index:100;}
 	#pad-return .return{background:red;font-size:2.8em;}
 	#wrapper{clear:both;}
 }
