@@ -88,3 +88,8 @@ function rewin(){
 	});
 	
 }
+
+
+function getjson(){
+	
+}
