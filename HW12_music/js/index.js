@@ -74,7 +74,7 @@ function backtoprev(view, wrapper){
 
 function rewin(){
 	//$("div[id^='page']")
-/*	$(window).bind("load resize",function(){
+	$(window).bind("load resize",function(){
 		var w = window.innerWidth; 
 		var h = window.innerHeight; 
 		
@@ -82,13 +82,13 @@ function rewin(){
 		
 		//$("#window").height(h);
 		//$("div[id^='page']")
-		var view = $("#window");   
+		/*var view = $("#window");   
 		var h_head = view.prev().height();
 		var h_view = h - h_head;
 		view.height(h_view);
 		$("div[id^='page']").height(h_view);
-	});
-	*/
+		*/	});
+
 }
 
 
