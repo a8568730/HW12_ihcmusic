@@ -310,14 +310,30 @@ div[id^="page"]{
 	#page3 h1{
 		line-height:3em;
 	}
-	#page3 h1{color:#fff;}
-	#songlist, #lyrics{height:85%;}
+	#page3 h1{
+		color:#fff;
+	}
+	#songlist, 
+	#lyrics{
+		height:85%;
+	}
 	#page2 .return,
 	#page3 .return{
 		display:none;
 	}
-	#pad-return{clear:both;display:block;width:100%;height:40px;position:relative;top:-40px;z-index:100;}
-	#pad-return .return{height:100%;font-size:2.8em;}
+	#pad-return{
+		clear:both;
+		display:block;
+		position:relative;
+		top:-40px;
+		width:100%;
+		height:40px;
+		z-index:100;
+	}
+	#pad-return .return{
+		height:100%;
+		font-size:2.8em;
+	}
 	
 }
 @media only screen and (min-width: 769px) {
