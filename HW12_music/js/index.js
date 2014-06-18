@@ -45,7 +45,7 @@ function gotolist(view ,wrapper){
 	$("#page1-nav").find("a").on('click',function(){
 		var h = view.height();
 		wrapper.css("top", "-=" + h);
-		
+		alert(h);
 		//music type as title in page2
 		var title = $(this).find(".title").text();
 		$("#page2").find("h1").text(title);
@@ -55,9 +55,8 @@ function gotolyrics(view ,wrapper){
 	$("#page2").find("p").on("click",function(){
 		var h = view.height();
 		var w = view.width();
-		if( w < 481 ){
-			wrapper.css("top", "-=" + h);
-		}
+		wrapper.css("top", "-=" + h);
+		alert(h);
 		var name = $(this).data("song");
 		$("#page3").find("h1").text(name);
 		
@@ -70,9 +69,10 @@ function backtoprev(view, wrapper){
 	});
 }
 
+
 function rewin(){
 	//$("div[id^='page']")
-	$(window).bind("load resize",function(){
+/*	$(window).bind("load resize",function(){
 		var w = window.innerWidth; 
 		var h = window.innerHeight; 
 		
@@ -86,7 +86,7 @@ function rewin(){
 		view.height(h_view);
 		$("div[id^='page']").height(h_view);
 	});
-	
+	*/
 }
 
 
