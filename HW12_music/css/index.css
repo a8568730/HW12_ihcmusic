@@ -287,7 +287,6 @@ div[id^="page"]{
 @media only screen and (min-width: 481px) {
 	#head-container{height:8%;}
 	#head-nav a{height:20%;}
-	#sign-group a{}
 	/*#footer{
 		display:block;
 		position:relative;
@@ -371,6 +370,24 @@ div[id^="page"]{
 		margin:0 50px 50px 0;
 	}
 	*/
+	#wrapper{
+		height:100%;
+	}
+	#page1, #page2, #page3{
+		
+		height:100%;
+		float:left;
+	}
+	#page1{
+		width:15%;
+	}
+	#page2{
+		width:70%;
+	}
+	#page3{
+		width:15%;
+	}
+	
 	.return{
 		display:none;
 	}
