@@ -212,11 +212,6 @@ div[id^="page"]{
 	line-height:2em;
 	text-align:center;
 }
-#songlist,
-#lyrics{
-	height:80%;/*480px-50px(head)-40px(btn)-35px(h1)=345px*/
-	overflow-y:scroll;
-}
 #page2 p{
 	display:block;
 	width:100%;
@@ -255,9 +250,16 @@ div[id^="page"]{
 	background:#553B90;
 }
 
+#songlist{
+	height:80%;/*480px-50px(head)-40px(btn)-35px(h1)=345px*/
+}
 #lyrics {
 	background:#B0E7FF;
 	height:75%;
+}
+#songlist,
+#lyrics{	
+	overflow-y:scroll;
 }
 #lyrics p{
 	display:block;
@@ -320,11 +322,11 @@ div[id^="page"]{
 	#page3 h1{
 		color:#fff;
 	}
-	#songlist{
+	#lyrics{
 		height:85%;
 	}
-	#lyrics{
-		height:80%;
+	#songlist{
+		height:90%;
 	}
 	#page2 .return,
 	#page3 .return{
