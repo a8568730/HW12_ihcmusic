@@ -311,6 +311,7 @@ div[id^="page"]{
 		line-height:3em;
 	}
 	#page3 h1{color:#fff;}
+	#songlist, #lyrics{height:85%;}
 	#page2 .return,
 	#page3 .return{
 		display:none;
