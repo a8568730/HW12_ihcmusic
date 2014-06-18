@@ -387,8 +387,16 @@ div[id^="page"]{
 		width:15%;
 	}
 	
-	#page1-nav a{height:5%;width:100%;}
-	
+	#page1-nav a{height:10%;width:100%;min-height:30px;}
+	#page1-nav span{display:inline-block;width:70%;}
+	#page1-nav span:nth-child(2){width:30%;text-align:left;}
+	#page1{clear:both;}
+	#page2 p{
+		width:300px;
+		height:300px;
+		margin:10px;
+		float:left;
+	}
 	.return{
 		display:none;
 	}
