@@ -257,6 +257,7 @@ div[id^="page"]{
 
 #lyrics {
 	background:#B0E7FF;
+	height:75%;
 }
 #lyrics p{
 	display:block;
@@ -271,7 +272,10 @@ div[id^="page"]{
 
 #pad-return{display:none;}
 
-
+#page3 audio {
+	display:block;
+	width:100%;
+}
 
 
 
@@ -306,6 +310,7 @@ div[id^="page"]{
 		border-left:5px solid #4E2D9B;
 		background: #462B83;
 	}
+	
 	#page2 h1,
 	#page3 h1{
 		line-height:3em;
@@ -313,9 +318,11 @@ div[id^="page"]{
 	#page3 h1{
 		color:#fff;
 	}
-	#songlist, 
-	#lyrics{
+	#songlist{
 		height:85%;
+	}
+	#lyrics{
+		height:80%;
 	}
 	#page2 .return,
 	#page3 .return{
