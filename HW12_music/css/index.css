@@ -294,16 +294,15 @@ div[id^="page"]{
 	#page3{
 		float:left;
 		width:50%;
-		height:200px;
 		background:#ffcc00;
 	}
 	#page2 .return,
 	#page3 .return{
 		display:none;
 	}
-	#pad-return{clear:both;display:block;width:100%;height:40px;position:relative;bottom:40px;z-index:100;}
-	#pad-return .return{background:red;font-size:2.8em;}
-	#wrapper{clear:both;}
+	#pad-return{clear:both;display:block;width:100%;height:40px;position:relative;top:-40px;z-index:100;}
+	#pad-return .return{height:100%;background:red;font-size:2.8em;}
+	
 }
 @media only screen and (min-width: 769px) {
 /*	div[id^="page"]{
