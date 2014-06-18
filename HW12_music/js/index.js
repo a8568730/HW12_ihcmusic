@@ -44,7 +44,9 @@ function togglesign(){
 function gotolist(view ,wrapper){
 	$("#page1-nav").find("a").on('click',function(){
 		var h = view.height();
-		wrapper.css("top", "-=" + h);
+		var w = view.width();
+		if(w < 769)
+			wrapper.css("top", "-=" + h);
 		//alert(h);
 		//music type as title in page2
 		var title = $(this).find(".title").text();
