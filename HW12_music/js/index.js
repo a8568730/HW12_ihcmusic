@@ -56,7 +56,7 @@ function gotolyrics(view ,wrapper){
 		var h = view.height();
 		var w = view.width();
 		if(w<481)
-			wrapper.css("top", "-=" + h);
+			wrapper.css("top", "-=" + (h-1));
 		//alert(h);
 		var name = $(this).data("song");
 		$("#page3").find("h1").text(name);
