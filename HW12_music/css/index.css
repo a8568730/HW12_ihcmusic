@@ -251,6 +251,9 @@ div[id^="page"]{
 	color:#fafafa;
 	font-size:inherit;
 }
+.return:hover{
+	background:#553B90;
+}
 
 #lyrics {
 	background:#B0E7FF;
@@ -295,16 +298,19 @@ div[id^="page"]{
 	#page2{
 		float:left;
 		width:60%;
+		border-right:1px solid #4E2D9B;
 	}
 	#page3{
 		float:left;
 		width:40%;
+		border-left:5px solid #4E2D9B;
+		background: #462B83;
 	}
 	#page2 h1,
 	#page3 h1{
 		line-height:3em;
 	}
-
+	#page3 h1{color:#fff;}
 	#page2 .return,
 	#page3 .return{
 		display:none;
