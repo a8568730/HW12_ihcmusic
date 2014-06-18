@@ -61,6 +61,7 @@ function gotolyrics(view ,wrapper){
 		var name = $(this).data("song");
 		$("#page3").find("h1").text(name);
 		
+		document.getElementById('cursong').play();
 	});
 }
 function backtoprev(view, wrapper){
