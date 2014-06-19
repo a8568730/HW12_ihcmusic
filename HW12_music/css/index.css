@@ -211,8 +211,20 @@ div[id^="page"]{
 	line-height:2em;
 	text-align:center;
 }
-#page2 p{
-	display:block;
+#songlist{
+	height:80%;/*480px-50px(head)-40px(btn)-35px(h1)=345px*/
+}
+#lyrics {
+	background:#B0E7FF;
+	height:75%;
+}
+#songlist,
+#lyrics{	
+	text-align:center;
+	overflow-y:scroll;
+}
+#songlist p{
+	display:inline-block;
 	width:100%;
 	height:30px;
 	padding:10px 0;
@@ -226,14 +238,26 @@ div[id^="page"]{
 	line-height:30px;
 	text-indent:1em;
 	color:#555;
+	text-align:left;
 }
-#page2 p:hover{
+#songlist p:hover{
 	background:#C2F47C;
 	background:-webkit-linear-gradient(#FFED8C,#FFE34D);
 	background:-moz-linear-gradient(#FFED8C,#FFE34D);
 	background:-o-linear-gradient(#FFED8C,#FFE34D);
 	background:linear-gradient(#FFED8C,#FFE34D);
 }
+#lyrics p{
+	display:block;
+	width:100%;
+	height:30px;
+	padding:10px 0;
+	border:none;
+	line-height:30px;
+	color:#555;
+	text-align:center;
+}
+
 .return{
 	position:absolute;
 	z-index:9999;
@@ -249,27 +273,6 @@ div[id^="page"]{
 	background:#553B90;
 }
 
-#songlist{
-	height:80%;/*480px-50px(head)-40px(btn)-35px(h1)=345px*/
-}
-#lyrics {
-	background:#B0E7FF;
-	height:75%;
-}
-#songlist,
-#lyrics{	
-	overflow-y:scroll;
-}
-#lyrics p{
-	display:block;
-	width:100%;
-	height:30px;
-	padding:10px 0;
-	border:none;
-	line-height:30px;
-	color:#555;
-	text-align:center;
-}
 
 #pad-return{display:none;}
 
@@ -391,11 +394,10 @@ div[id^="page"]{
 	#page1-nav span{display:inline-block;width:70%;}
 	#page1-nav span:nth-child(2){width:30%;text-align:left;}
 	#page1{clear:both;}
-	#page2 p{
+	#songlist p{
 		width:300px;
 		height:300px;
 		margin:10px;
-		float:left;
 	}
 	.return{
 		display:none;
