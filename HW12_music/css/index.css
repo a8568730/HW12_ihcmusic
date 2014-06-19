@@ -375,20 +375,23 @@ div[id^="page"]{
 	#head-container{
 		min-height:50px;
 	}
+	#search{width:100px;padding:5px;background-size:20%;}
+	#search:focus{width:150px;background-size:15%;}
 	#search,#search:focus{
-		margin-top:15px;
+		margin-top:25px;
+		padding:5px 10px;
 	}
 	#sign-btn{display:none;}
-	/*#sign-group{
+	#sign-group{
 		float:right;
-		position:static;
-		top:.6em;
+		position:relative;
+		top:25%;
 		display:inline-block;
 		width:20%;
 		background:none;
 		box-shadow:none;
 		text-align:center;
-	}*/
+	}
 	#sign-group a{
 		width:30%;
 		text-indent:0em;
