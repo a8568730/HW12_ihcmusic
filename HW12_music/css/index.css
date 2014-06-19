@@ -372,19 +372,27 @@ div[id^="page"]{
 		margin:0 50px 50px 0;
 	}
 	*/
+	#head-container{
+		min-height:50px;
+	}
+	#search,#search:focus{
+		margin-top:15px;
+	}
 	#sign-btn{display:none;}
-	#sign-group{
-		position:relative;
+	/*#sign-group{
+		float:right;
+		position:static;
+		top:.6em;
 		display:inline-block;
 		width:20%;
-		
 		background:none;
 		box-shadow:none;
 		text-align:center;
-	}
+	}*/
 	#sign-group a{
-		width:40%;
-		padding:none; 
+		width:30%;
+		text-indent:0em;
+		padding:5px 0; 
 		display:inline-block;
 	}
 	#wrapper{
