@@ -288,7 +288,7 @@ div[id^="page"]{
 
 
 @media only screen and (min-width: 481px) {
-	#head-container{height:8%;}
+	#head-container{height:8%;min-height:50px;}
 	/*#footer{
 		display:block;
 		position:relative;
