@@ -78,7 +78,7 @@ button{
 }
 #sign-group{
 	display:none;
-	position:relative;
+	position:absolute;
 	z-index:10; 
 	width:100%;
 	background: #7D60C1;
@@ -372,11 +372,24 @@ div[id^="page"]{
 		margin:0 50px 50px 0;
 	}
 	*/
+	#sign-btn{display:none;}
+	#sign-group{
+		position:relative;
+		display:inline-block;
+		width:20%;
+		float:right;
+		background:none;
+		box-shadow:none;
+		text-align:center;
+	}
+	#sign-group a{
+		width:40%; 
+		display:inline-block;
+	}
 	#wrapper{
 		height:100%;
 	}
 	#page1, #page2, #page3{
-		
 		height:100%;
 		float:left;
 	}
