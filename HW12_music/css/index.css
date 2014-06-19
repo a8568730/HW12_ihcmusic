@@ -444,6 +444,8 @@ div[id^="page"]{
 	#page1-nav a:nth-child(5):hover{color:#F0622C;}
 	#footer{
 		height:5%;
+		background:none;
+		color:#555;
 	}
 	#page1-nav span{display:inline-block;width:70%;}
 	#page1-nav span:nth-child(2){width:30%;text-align:left;}
