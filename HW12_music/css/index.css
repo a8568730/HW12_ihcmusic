@@ -377,13 +377,14 @@ div[id^="page"]{
 		position:relative;
 		display:inline-block;
 		width:20%;
-		float:right;
+		
 		background:none;
 		box-shadow:none;
 		text-align:center;
 	}
 	#sign-group a{
-		width:40%; 
+		width:40%;
+		padding:none; 
 		display:inline-block;
 	}
 	#wrapper{
