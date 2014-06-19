@@ -412,27 +412,43 @@ div[id^="page"]{
 		width:15%;
 	}
 	
+	#banner{
+		background-position:-50px 0;
+		height:40%;
+	}
+	#page1-nav{
+		height:30%;
+	}
 	#page1-nav a{
 		width:100%;
-		height:15%;
+		height:20%;
 		min-height:30px;
-		font-size:1.1em;
-		line-height:200%;
+		padding:0;
+		font-size:1em;
+		line-height:300%;
+		border-color:#eee;
 	}
+	#page1-nav a:nth-child(1),
 	#page1-nav a:nth-child(2),
 	#page1-nav a:nth-child(3),
 	#page1-nav a:nth-child(4),
 	#page1-nav a:nth-child(5){
-		border-color:transparent #aaa #aaa #aaa;
+		border-color:transparent #eee #eee #eee;
+		color:#aaa;
 	}
-		
+	#page1-nav a:hover{background:#fff;border-color:transparent #eee #eee #555;}
+	#page1-nav a:nth-child(1):hover{color:#E6382B;}
+	#page1-nav a:nth-child(2):hover{color:#B5209F;}
+	#page1-nav a:nth-child(3):hover{color:#0757B3;}
+	#page1-nav a:nth-child(4):hover{color:#387D12;}
+	#page1-nav a:nth-child(5):hover{color:#F0622C;}
+	#footer{
+		height:5%;
+	}
 	#page1-nav span{display:inline-block;width:70%;}
 	#page1-nav span:nth-child(2){width:30%;text-align:left;}
 	#page1{clear:both;}
 	#window{min-height:500px;}
-	#banner{
-		background-position:-50px 0;
-	}
 	#songlist p{
 		width:300px;
 		height:300px;
