@@ -210,8 +210,8 @@ div[id^="page"]{
 	height:10%;
 	text-align:center;
 }
-#page2 h1{font-weight:700;line-height:200%;font-size: 1.3em; /*35px/28px=1.2em  ,1em=28px*/}
-#page3 h1{font-weight:500;line-height:300%;}
+#page2 h1{font-weight:700;line-height:200%;font-size:1.3em; /*35px/28px=1.2em  ,1em=28px*/}
+#page3 h1{font-weight:500;line-height:270%;font-size:1.2em;}
 #songlist{
 	height:80%;/*480px-50px(head)-40px(btn)-35px(h1)=345px*/
 }
@@ -223,6 +223,7 @@ div[id^="page"]{
 #lyrics{	
 	text-align:center;
 	overflow-y:scroll;
+	font-size:.9em;
 }
 #songlist p{
 	display:inline-block;
