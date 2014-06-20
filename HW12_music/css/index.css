@@ -1,5 +1,6 @@
 @import url('reset.css');
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url('player.css');
 
 [class*="fontawesome-"]:before{
 	font-family: 'fontawesome', sans-serif;
@@ -225,7 +226,8 @@ div[id^="page"]{
 	text-align:center;
 	overflow-y:scroll;
 }
-#songlist p{
+/*#songlist p{*/
+.song{
 	display:inline-block;
 	width:100%;
 	height:30px;
@@ -243,13 +245,14 @@ div[id^="page"]{
 	text-align:left;
 	font-weight:100;
 }
-#songlist p:hover{
+/*#songlist p:hover{*/
+/*.song:hover{
 	background:#C2F47C;
 	background:-webkit-linear-gradient(#FFED8C,#FFE34D);
 	background:-moz-linear-gradient(#FFED8C,#FFE34D);
 	background:-o-linear-gradient(#FFED8C,#FFE34D);
 	background:linear-gradient(#FFED8C,#FFE34D);
-}
+}*/
 #lyrics p{
 	display:block;
 	width:100%;
@@ -482,7 +485,8 @@ div[id^="page"]{
 		font-size:.85em;
 	}
 	#window{min-height:500px;}
-	#songlist p{
+	/*#songlist p{*/
+	.song{
 		width:300px;
 		height:300px;
 		margin:20px;
