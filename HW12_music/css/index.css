@@ -223,7 +223,6 @@ div[id^="page"]{
 #lyrics{	
 	text-align:center;
 	overflow-y:scroll;
-	font-size:.9em;
 }
 #songlist p{
 	display:inline-block;
@@ -256,6 +255,7 @@ div[id^="page"]{
 	height:30px;
 	padding:10px 0;
 	border:none;
+	font-size:.9em;
 	line-height:30px;
 	color:#555;
 	text-align:center;
@@ -270,7 +270,7 @@ div[id^="page"]{
 	background:#462B83;
 	border:none;
 	color:#fafafa;
-	font-size:inherit;
+	font-size:.9em;
 }
 .return:hover{
 	background:#553B90;
