@@ -34,6 +34,7 @@ button{
 	display:inline-block;
 	color:#fff;
 	font-size:100%;
+	font-weight:900;
 }
 #ss-container{
 	height:100%;
@@ -289,6 +290,7 @@ div[id^="page"]{
 
 @media only screen and (min-width: 481px) {
 	#head-container{height:8%;min-height:50px;}
+	#head-container .title{font-size:150%;}
 	/*#footer{
 		display:block;
 		position:relative;
