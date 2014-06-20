@@ -227,7 +227,7 @@ div[id^="page"]{
 	overflow-y:scroll;
 }
 /*#songlist p{*/
-.song{
+/*.song{
 	display:inline-block;
 	width:100%;
 	height:30px;
@@ -486,12 +486,12 @@ div[id^="page"]{
 	}
 	#window{min-height:500px;}
 	/*#songlist p{*/
-	.song{
+	/*.song{
 		width:300px;
 		height:300px;
 		margin:20px;
 		text-align:center;
-	}
+	}*/
 	.return{
 		display:none;
 	}
