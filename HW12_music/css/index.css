@@ -33,7 +33,7 @@ button{
 #head-container .title{
 	display:inline-block;
 	color:#fff;
-	font-size:100%;
+	font-size:105%;
 	font-weight:900;
 }
 #ss-container{
@@ -93,7 +93,7 @@ button{
 	padding:10px 0;
 	line-height:30px;
 	text-indent:1em;
-	font-size:1em;/*30px*/
+	font-size:100%;
 }
 #sign-group a:hover{
 	background: #7455BC;
@@ -408,6 +408,7 @@ div[id^="page"]{
 		padding:2px 3px; 
 		display:inline-block;
 		text-align:center;
+		font-size:82%;
 	}
 	#sign-group a:first-child{
 		background:#37E10B;
