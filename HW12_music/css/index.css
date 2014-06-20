@@ -129,7 +129,7 @@ div[id^="page"]{
 }
 #banner{
 	width:100%;
-	height:50%;
+	height:51%;
 	background:url('../images/headphones-music_00301931.jpg');
 	/*http://wallpoper.com/*/
 	background-size:cover;
@@ -137,7 +137,7 @@ div[id^="page"]{
 #page1-nav{
 	clear:both;
 	width:100%;
-	height:45%;
+	height:39%;
 }
 #page1-nav a{
 	float:left;
@@ -189,16 +189,17 @@ div[id^="page"]{
 	display:block;
 	position:relative;
 	width:100%;
-	height:5%;
+	height:10%;
 	text-align:center;
-	background:#e0e0e0;
+	background:#efefef;
+	color:#555;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
 #footer span{
 	font-size:0.8em;
-	line-height:1.5em;
+	line-height:2em;
 }
 
 
@@ -475,7 +476,6 @@ div[id^="page"]{
 	#footer{
 		height:5%;
 		background:none;
-		color:#555;
 	}
 	#page1-nav span{display:inline-block;width:70%;}
 	#page1-nav span:nth-child(2){width:30%;text-align:left;}
