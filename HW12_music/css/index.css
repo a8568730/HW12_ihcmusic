@@ -208,8 +208,6 @@ div[id^="page"]{
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	height:10%;
-	font-size: 1.2em; /*35px/28px=1.2em  ,1em=28px*/
-	line-height:2em;
 	text-align:center;
 }
 #page2 h1{font-weight:700;line-height:200%;font-size: 1.3em; /*35px/28px=1.2em  ,1em=28px*/}
