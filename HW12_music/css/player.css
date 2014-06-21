@@ -47,6 +47,7 @@ button{outline:none;}
 	.song h3,
 	.song h4 {
 	    float:none;
+	    padding:0;
 	    text-indent:2em;
 	    line-height:2em;
 	    text-align:left;
