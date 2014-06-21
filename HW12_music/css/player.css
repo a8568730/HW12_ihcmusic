@@ -50,11 +50,11 @@ button{outline:none;}
 	    line-height:1.5em;
 	    text-align:left;
 	}
-	.song h3{color:#666;}
+	.song h3{color:#e0e0e0;}
 	.song h4{
-		font-size:.9em;
+		font-size:.85em;
 		font-weight:100;
-		color:#e0e0e0;
+		color:#977908;
 	}
 	.cover{
 		display:block;
