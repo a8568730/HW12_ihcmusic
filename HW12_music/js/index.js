@@ -51,6 +51,8 @@ function gotolist(view ,wrapper){
 		//music type as title in page2
 		var title = $(this).find(".title").text();
 		$("#page2").find("h1").text(title);
+		
+		bindplay($("#page2"));
 	});
 };
 function gotolyrics(view ,wrapper){
@@ -73,7 +75,16 @@ function backtoprev(view, wrapper){
 	});
 }
 
-
+function bindplay(page2){
+	page2.find("#songlist").on('click','.player',function(){
+		//$(this).toggleClass("show").siblings().removeClass("show");
+		$(this).closest("#songlist").find(".player").removeClass("show");
+		$(this).closest("#songlist").find(".play-btn").removeClass("play");
+		$(this).toggleClass("show");
+		$(this).find(".play-btn").toggleClass("play");
+		//$(this).find('.play-btn').toggleClass("btn-play");
+	});
+}
 function rewin(){
 	//$("div[id^='page']")
 	$(window).bind("load resize",function(){
