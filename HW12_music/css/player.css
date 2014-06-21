@@ -41,8 +41,11 @@ button{outline:none;}
 	    background:#333;
 	    text-align:center;
 	}
+	.song:hover {
+		background:#333;
+	}
 	.song h3,
-	.song h4{
+	.song h4 {
 	    float:none;
 	    text-indent:2em;
 	    line-height:2em;
