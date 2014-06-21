@@ -125,8 +125,11 @@ button{outline:none;}
 	}
 	.song h3,
 	.song h4 {
-	    text-indent:2em;
+	    text-indent:1em;
 	    line-height:2em;
+	}
+	.song h4{
+		font-size:.8em;
 	}
 	.cover{
 		width:84%;
