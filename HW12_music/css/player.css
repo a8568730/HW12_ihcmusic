@@ -17,7 +17,7 @@ button{outline:none;}
 	background:-o-linear-gradient(#FFED8C,#FFE34D);
 	background:linear-gradient(#FFED8C,#FFE34D);
 }
-.song h3{
+.song h3 {
 	float:left;
 	padding:0 30px;
 }
@@ -30,7 +30,7 @@ button{outline:none;}
 }
 
 @media only screen and (min-width: 481px) {
-	.song{
+	.song {
 	    width:150px;
 	    height:200px;
 	    margin:20px;
@@ -46,20 +46,21 @@ button{outline:none;}
 	.song h4 {
 	    float:none;
 	    padding:0;
-	    text-indent:2em;
-	    line-height:2em;
+	    text-indent:0em;
+	    line-height:1.5em;
 	    text-align:left;
 	}
 	.song h3{color:#666;}
 	.song h4{
+		font-size:.9em;
 		font-weight:100;
 		color:#e0e0e0;
 	}
 	.cover{
 		display:block;
 		position:relative;
-		width:84%;
-		height:70%;
+		width:85%;
+		height:60%;
 		margin:auto;
 		margin-bottom:20px;
 	}
@@ -122,5 +123,14 @@ button{outline:none;}
 	    margin:20px;
 	    padding:15px 15px 5px;
 	}
-	
+	.song h3,
+	.song h4 {
+	    text-indent:2em;
+	    line-height:2em;
+	}
+	.cover{
+		width:84%;
+		height:70%;
+		margin-bottom:20px;
+	}
 }
