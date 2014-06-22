@@ -56,17 +56,25 @@ function gotolist(view ,wrapper){
 	});
 };
 function gotolyrics(view ,wrapper){
-	$("#page2").find("p").on("click",function(){
-		var h = view.height();
-		var w = view.width();
-		if(w<481)
+	var h = view.height();
+	var w = view.width();
+	
+	if(w<481){
+		$("#page2").find(".song").on("click",function(){
 			wrapper.css("top", "-=" + (h-1));
-		//alert(h);
-		var name = $(this).data("song");
-		$("#page3").find("h1").text(name);
-		
-		document.getElementById('cursong').play();
-	});
+			
+			var name = $(this).data("song");
+			$("#page3").find("h1").text(name);
+			document.getElementById('cursong').play();
+		});
+	}
+	else{
+		$("#page2").find(".player").on("click",function(){
+			var name = $(this).data("song");
+			$("#page3").find("h1").text(name);
+			document.getElementById('cursong').play();
+		});
+	}
 }
 function backtoprev(view, wrapper){
 	$(".return").on('click',function(){
@@ -105,6 +113,13 @@ function rewin(){
 }
 
 
-function getjson(){
-	
+function getjson(filename){
+	$.getJSON(filename, function(data){
+		
+		$("#page2").find("#songlist").empty();
+		
+		$.each(data, function(index, en){
+			
+		});
+	});
 }
