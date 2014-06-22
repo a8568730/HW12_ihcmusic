@@ -1,0 +1,42 @@
+[
+	{
+		"index":"jpop1",
+		"name":"SMAP-Just Go",
+		"cover":"images/Gift_200x200.jpg",
+		"follow":"44500",
+		"mp3":"mp3/Just go.mp3",
+		"lrc":"lyrics/Just go.lrc"
+	},
+	{
+		"index":"jpop2",
+		"name":"SMAP-Secial Thanks",
+		"cover":"images/Gift_200x200.jpg",
+		"follow":"41210",
+		"mp3":"mp3/Speical Thanks!.mp3",
+		"lrc":"lyrics/Speical Thanks.lrc"
+	},
+	{
+		"index":"jpop3",
+		"name":"SMAP-さかさまの空",
+		"cover":"images/Gift_200x200.jpg",
+		"follow":"40015",
+		"mp3":"mp3/さかさまの空.mp3",
+		"lrc":"lyrics/さかさまの空.lrc"
+	},
+	{
+		"index":"jpop4",
+		"name":"SMAP-Gift",
+		"cover":"images/Gift_200x200.jpg",
+		"follow":"60972",
+		"mp3":"mp3/Gift.mp3",
+		"lrc":"lyrics/Gift.lrc"
+	},
+	{
+		"index":"jpop5",
+		"name":"SMAP-Moment",
+		"cover":"images/moment.png",
+		"follow":"104523",
+		"mp3":"mp3/Moment.mp3",
+		"lrc":"lyrics/Moment.lrc"
+	}
+]

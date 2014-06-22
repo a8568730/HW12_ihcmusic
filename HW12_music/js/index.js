@@ -47,11 +47,18 @@ function gotolist(view ,wrapper){
 		var w = view.width();
 		if(w < 769)
 			wrapper.css("top", "-=" + h);
-		//alert(h);
+
 		//music type as title in page2
 		var title = $(this).find(".title").text();
 		$("#page2").find("h1").text(title);
 		
+		//get and load the music json file
+		var jlist = 'js/' + $(this).data('type') + '.json';
+		alert(jlist);
+		getjson(jlist);
+		alert(jlist);
+		
+		//bind the player icon on covers
 		bindplay($("#page2"));
 	});
 };
@@ -111,15 +118,22 @@ function rewin(){
 		*/	});
 
 }
-
-
+/*
+function getcon(type){
+	switch (type){
+		case 'hot':break;
+		case 'j-pop':
+		case 'guitar':
+		case 'BGM':
+		case 'radio':
+	}
+}*/
 function getjson(filename){
 	$.getJSON(filename, function(data){
-		
 		$("#page2").find("#songlist").empty();
 		
 		$.each(data, function(index, en){
-			
 		});
+		return false;
 	});
 }
