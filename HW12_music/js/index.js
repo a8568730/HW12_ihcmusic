@@ -27,7 +27,7 @@ $(document).ready(function(){
 	
 	togglesign();
 	gotolist(view, wrapper);
-	gotolyrics(view, wrapper);
+	gotolyrics(view, wrapper,1);
 	backtoprev(view, wrapper);
 	
 });
@@ -54,30 +54,30 @@ function gotolist(view ,wrapper){
 		
 		//get and load the music json file
 		var jlist = 'js/' + $(this).data('type') + '.json';
-		alert(jlist);
 		getjson(jlist);
-		alert(jlist);
 		
 		//bind the player icon on covers
 		bindplay($("#page2"));
 	});
 };
-function gotolyrics(view ,wrapper){
+function gotolyrics(view ,wrapper,num){
 	var h = view.height();
 	var w = view.width();
-	
+	alert(num);
 	if(w<481){
 		$("#page2").find(".song").on("click",function(){
 			wrapper.css("top", "-=" + (h-1));
 			
 			var name = $(this).data("song");
 			$("#page3").find("h1").text(name);
+			alert('Phone, name: ' + name);
 			document.getElementById('cursong').play();
 		});
 	}
 	else{
 		$("#page2").find(".player").on("click",function(){
-			var name = $(this).data("song");
+			var name = $(this).closest('.song').data("song");
+			alert('PC, name: ' + name);
 			$("#page3").find("h1").text(name);
 			document.getElementById('cursong').play();
 		});
@@ -146,6 +146,10 @@ function getjson(filename){
 		
 			songlist.append(html);
 		});
+		var view = $("#window");
+		var wrapper = $("#wrapper");
+		
+		gotolyrics(view, wrapper,2);
 		return false;
 	});
 }
