@@ -130,9 +130,21 @@ function getcon(type){
 }*/
 function getjson(filename){
 	$.getJSON(filename, function(data){
-		$("#page2").find("#songlist").empty();
+		var songlist = $("#page2").find("#songlist");
+		songlist.empty();
 		
 		$.each(data, function(index, en){
+			var html = '<div class="song" data-song="' + en['name'] + '">';
+			html += '<div class="cover"><div class="player">';
+			html += '<button class="play-btn">►</button></div>';
+			
+			var cover = '"' + en['cover'] + '"';
+			html += '<img src=' + cover + '/></div>'; 
+			html += '<h3>' + en['name'] + '</h3>';
+			html += '<h4>like: ' + en['like'] + '</h4>';
+			html += '</div>';
+		
+			songlist.append(html);
 		});
 		return false;
 	});
