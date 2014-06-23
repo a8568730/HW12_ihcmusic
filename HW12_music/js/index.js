@@ -63,14 +63,15 @@ function gotolist(view ,wrapper){
 function gotolyrics(view ,wrapper,num){
 	var h = view.height();
 	var w = view.width();
-	alert(num);
+	//alert(num);
 	if(w<481){
 		$("#page2").find(".song").on("click",function(){
 			wrapper.css("top", "-=" + (h-1));
 			
 			var name = $(this).data("song");
+			var mp3 = $(this).data("mp3");
 			$("#page3").find("h1").text(name);
-			alert('Phone, name: ' + name);
+			document.getElementById('cursong').src = mp3;
 			document.getElementById('cursong').play();
 		});
 	}
@@ -79,7 +80,6 @@ function gotolyrics(view ,wrapper,num){
 			var name = $(this).closest('.song').data("song");
 			var mp3 = $(this).closest('.song').data("mp3");
 			$("#page3").find("h1").text(name);
-//			$("#page3").find("source").attr('src',mp3);
 			document.getElementById('cursong').src = mp3;
 			document.getElementById('cursong').play();
 		});
