@@ -76,6 +76,7 @@ function gotolyrics(view ,wrapper,num){
 	}
 	else{
 		$("#page2").find(".player").on("click",function(){
+			var name = $(this).closest('.song').data("song");
 			var mp3 = $(this).closest('.song').data("mp3");
 			$("#page3").find("h1").text(name);
 //			$("#page3").find("source").attr('src',mp3);
