@@ -27,7 +27,7 @@ $(document).ready(function(){
 	
 	togglesign();
 	gotolist(view, wrapper);
-	gotolyrics(view, wrapper,1);
+	//gotolyrics(view, wrapper,1);
 	backtoprev(view, wrapper);
 	
 });
@@ -76,9 +76,10 @@ function gotolyrics(view ,wrapper,num){
 	}
 	else{
 		$("#page2").find(".player").on("click",function(){
-			var name = $(this).closest('.song').data("song");
-			alert('PC, name: ' + name);
+			var mp3 = $(this).closest('.song').data("mp3");
 			$("#page3").find("h1").text(name);
+//			$("#page3").find("source").attr('src',mp3);
+			document.getElementById('cursong').src = mp3;
 			document.getElementById('cursong').play();
 		});
 	}
@@ -134,7 +135,8 @@ function getjson(filename){
 		songlist.empty();
 		
 		$.each(data, function(index, en){
-			var html = '<div class="song" data-song="' + en['name'] + '">';
+			var html = '<div class="song" data-song="' + en['name'] + '" ';
+			html += 'data-mp3="'+ en['mp3'] + '">';
 			html += '<div class="cover"><div class="player">';
 			html += '<button class="play-btn">►</button></div>';
 			
