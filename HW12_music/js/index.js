@@ -56,8 +56,8 @@ function gotolist(view ,wrapper){
 		var jlist = 'js/' + $(this).data('type') + '.json';
 		getjson(jlist);
 		
-		//bind the player icon on covers
-		bindplay($("#page2"));
+		//add the player icon on covers
+		playicon($("#page2"));
 	});
 };
 function gotolyrics(view ,wrapper,num){
@@ -90,7 +90,7 @@ function backtoprev(view, wrapper){
 	});
 }
 
-function bindplay(page2){
+function playicon(page2){
 	page2.find("#songlist").on('click','.player',function(){
 		//$(this).toggleClass("show").siblings().removeClass("show");
 		$(this).closest("#songlist").find(".player").removeClass("show");
@@ -149,6 +149,7 @@ function getjson(filename){
 		var view = $("#window");
 		var wrapper = $("#wrapper");
 		
+		//gotolyrtic event works only after loading json finishment 
 		gotolyrics(view, wrapper,2);
 		return false;
 	});
