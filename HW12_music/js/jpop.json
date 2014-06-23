@@ -20,7 +20,7 @@
 		"name":"SMAP-さかさまの空",
 		"cover":"images/Gift_200x200.jpg",
 		"like":"40015",
-		"mp3":"mp3/さかさまの空.mp3",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/02 掌の世界.mp3",
 		"lrc":"lyrics/さかさまの空.lrc"
 	},
 	{
@@ -28,7 +28,7 @@
 		"name":"SMAP-Gift",
 		"cover":"images/Gift_200x200.jpg",
 		"like":"60972",
-		"mp3":"mp3/Gift.mp3",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/01 Joy!!.mp3",
 		"lrc":"lyrics/Gift.lrc"
 	},
 	{
