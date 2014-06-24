@@ -77,9 +77,13 @@ function gotolyrics(view ,wrapper,num){
 	}
 	else{
 		$("#page2").find(".player").on("click",function(){
-			var name = $(this).closest('.song').data("song");
-			var mp3 = $(this).closest('.song').data("mp3");
+			var parent = $(this).closest('.song');
+			var name = parent.data("song");
+			var mp3 = parent.data("mp3");
+			var lyric = parent.data("lrc")
+			
 			$("#page3").find("h1").text(name);
+			synclrc(lyric);
 			document.getElementById('cursong').src = mp3;
 			document.getElementById('cursong').play();
 		});
@@ -137,7 +141,8 @@ function getjson(filename){
 		
 		$.each(data, function(index, en){
 			var html = '<div class="song" data-song="' + en['name'] + '" ';
-			html += 'data-mp3="'+ en['mp3'] + '">';
+			html += 'data-mp3="'+ en['mp3'] + '" ';
+			html += 'data-lrc="'+ en['lrc'] + '">';
 			html += '<div class="cover"><div class="player">';
 			html += '<button class="play-btn">►</button></div>';
 			
@@ -152,8 +157,36 @@ function getjson(filename){
 		var view = $("#window");
 		var wrapper = $("#wrapper");
 		
-		//gotolyrtic event works only after loading json finishment 
+		//gotolyric event works only after loading json finishment 
 		gotolyrics(view, wrapper,2);
 		return false;
 	});
+}
+
+function synclrc(lyric){
+	$("#page3").find("#lyrics").empty();
+	//read *.lrc
+	loadlrc(lyric);
+	//split
+	
+	//count time
+	
+	//append
+}
+
+function loadlrc(filename){
+	
+	alert('0, filename: ' + filename);
+	
+	$.get(filename, {}, function(data){
+		
+		var lines = data.split('\n');
+		for (i = 0 ; i < lines.length ; i++) {
+			alert(lines[i]);
+			var tt = $('<p>').text(lines[i].Text); 
+			$("#page3").find("#lyrics").append(tt);
+		}
+	},'html');
+	alert('01, filename: ' + filename);
+	
 }
