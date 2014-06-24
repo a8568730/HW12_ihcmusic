@@ -174,7 +174,7 @@ function synclrc(lyric){
 
 function loadlrc(filename){
 	
-	alert('0, filename: ' + filename);
+	//alert('0, filename: ' + filename);
 	
 	$.get(filename, {}, function(txt){
 		
@@ -199,12 +199,15 @@ function appendlrc(txt){
         var arr = val.split(']');
         var char = arr[1];
         var time = arr[0].split('[')[1];
-        
         var p = $('<p>');
         var record = prevtime;    
+        
         if(time){
-            record = counttime(time);
-            prevtime = record;
+            if(time[0]>='0' &&  time[0]<='9'){
+	            record = counttime(time);
+	            prevtime = record;
+            }
+            else return;
         }
         p.text(char);
         p.attr('data-time', record);
@@ -217,11 +220,11 @@ function counttime(time){
     var arr = time.split(':');
     var min = +arr[0];
     var sec = + arr[1];
-    var result = min*60 + sec;
+    var result = min*60 + sec -2;
     return result;
 }
 function displaylrc(){
-   var inter = 500; 
+   var inter = 10; 
    setInterval(checkifnextline, inter);
 }
 function checkifnextline(){
