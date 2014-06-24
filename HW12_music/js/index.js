@@ -167,27 +167,25 @@ function synclrc(lyric){
 	$("#page3").find("#lyrics").empty();
 	
 	//read *.lrc
-	var txt = loadlrc(lyric);
-	//append to #lyric
-	appendlrc(txt);
+	loadlrc(lyric);
     //synchroniclly highlight lyric
-	playlrc();
+	displaylrc();
 }
 
 function loadlrc(filename){
 	
 	alert('0, filename: ' + filename);
 	
-	var txt;
-	$.get(filename, {}, function(data){
+	$.get(filename, {}, function(txt){
 		
-		txt = data;
 		/*for (i = 0 ; i < lines.length ; i++) {
 			var tt = $('<p>').text(lines[i]); 
 			$("#page3").find("#lyrics").append(tt);
 		}*/
+		//append to #lyric
+		appendlrc(txt);
+
 	},'html');
-	return txt;
 }
 
 
@@ -222,7 +220,7 @@ function counttime(time){
     var result = min*60 + sec;
     return result;
 }
-function playlrc(){
+function displaylrc(){
    var inter = 500; 
    setInterval(checkifnextline, inter);
 }

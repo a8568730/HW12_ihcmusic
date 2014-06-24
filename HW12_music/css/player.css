@@ -29,6 +29,9 @@ button{outline:none;}
 	display:none;
 }
 
+.highlight {
+    background:rgba(200,0,0,0.2);
+}
 @media only screen and (min-width: 481px) {
 	.song {
 	    width:150px;
