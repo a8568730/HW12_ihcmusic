@@ -182,8 +182,7 @@ function loadlrc(filename){
 		
 		var lines = data.split('\n');
 		for (i = 0 ; i < lines.length ; i++) {
-			alert(lines[i]);
-			var tt = $('<p>').text(lines[i].Text); 
+			var tt = $('<p>').text(lines[i]); 
 			$("#page3").find("#lyrics").append(tt);
 		}
 	},'html');
