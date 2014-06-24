@@ -165,27 +165,92 @@ function getjson(filename){
 
 function synclrc(lyric){
 	$("#page3").find("#lyrics").empty();
+	
 	//read *.lrc
-	loadlrc(lyric);
-	//split
-	
-	//count time
-	
-	//append
+	var txt = loadlrc(lyric);
+	//append to #lyric
+	appendlrc(txt);
+    //synchroniclly highlight lyric
+	playlrc();
 }
 
 function loadlrc(filename){
 	
 	alert('0, filename: ' + filename);
 	
+	var txt;
 	$.get(filename, {}, function(data){
 		
-		var lines = data.split('\n');
-		for (i = 0 ; i < lines.length ; i++) {
+		txt = data;
+		/*for (i = 0 ; i < lines.length ; i++) {
 			var tt = $('<p>').text(lines[i]); 
 			$("#page3").find("#lyrics").append(tt);
-		}
+		}*/
 	},'html');
-	alert('01, filename: ' + filename);
-	
+	return txt;
+}
+
+
+function appendlrc(txt){
+	var area = $("#page3").find("#lyrics");
+	var lines = txt.split('\n').reverse();
+    var prevtime = 0;
+    
+    $.each(lines, function(index, val){
+        //[xx:xx.xx]abcdefg
+        var arr = val.split(']');
+        var char = arr[1];
+        var time = arr[0].split('[')[1];
+        
+        var p = $('<p>');
+        var record = prevtime;    
+        if(time){
+            record = counttime(time);
+            prevtime = record;
+        }
+        p.text(char);
+        p.attr('data-time', record);
+        
+        p.prependTo(area);
+    });
+    area.find('p:first-child').addClass('highlight');
+}
+function counttime(time){
+    var arr = time.split(':');
+    var min = +arr[0];
+    var sec = + arr[1];
+    var result = min*60 + sec;
+    return result;
+}
+function playlrc(){
+   var inter = 500; 
+   setInterval(checkifnextline, inter);
+}
+function checkifnextline(){
+    var myVid=document.getElementById("cursong");
+    var current = myVid.currentTime;
+    
+    var area = $("#page3").find("#lyrics");
+    var highlight = +area.find('p.highlight').data('time');
+    if(current > highlight) {
+        nextline();
+    }
+}
+function nextline(){
+	var area = $("#page3").find("#lyrics");
+	var count = +area.find('p').length;
+    var p_now = area.find('p.highlight');
+    var index = p_now.index();
+    
+    if(index < (count-1)){
+        var p_next = p_now.next();
+        if(p_next[0].tagName == "P"){
+            p_now.removeClass('highlight');
+            p_next.addClass('highlight');
+        }
+        else
+            return false;
+    }
+    else 
+        return false;
 }
