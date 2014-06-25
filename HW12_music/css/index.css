@@ -259,7 +259,7 @@ div[id^="page"]{
 	height:30px;
 	padding:10px 0;
 	border:none;
-	font-size:.9em;
+	font-size:.8em;
 	line-height:30px;
 	color:#555;
 	text-align:center;
@@ -335,6 +335,9 @@ div[id^="page"]{
 	}
 	#songlist{
 		height:90%;
+	}
+	#lyrics p{
+		font-size:.85em;
 	}
 	#page2 .return,
 	#page3 .return{
