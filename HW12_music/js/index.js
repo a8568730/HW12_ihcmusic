@@ -229,7 +229,7 @@ function counttime(time){
     var arr = time.split(':');
     var min = +arr[0];
     var sec = + arr[1];
-    var result = min*60 + sec -2;
+    var result = min*60 + sec;
     return result;
 }
 function displaylrc(){
