@@ -63,29 +63,15 @@ function gotolist(view ,wrapper){
 function gotolyrics(view ,wrapper,num){
 	var h = view.height();
 	var w = view.width();
-	//alert(num);
 	if(w<481){
 		$("#page2").find(".song").on("click",function(){
 			wrapper.css("top", "-=" + (h-1));
-			
-			var name = $(this).data("song");
-			var mp3 = $(this).data("mp3");
-			$("#page3").find("h1").text(name);
-			document.getElementById('cursong').src = mp3;
-			document.getElementById('cursong').play();
+			setmp3lrc($(this));
 		});
 	}
 	else{
 		$("#page2").find(".player").on("click",function(){
 			var parent = $(this).closest('.song');
-			/*var name = parent.data("song");
-			var mp3 = parent.data("mp3");
-			var lyric = parent.data("lrc")
-			
-			$("#page3").find("h1").text(name);
-			synclrc(lyric);
-			document.getElementById('cursong').src = mp3;
-			document.getElementById('cursong').play();*/
 			setmp3lrc(parent);
 		});
 	}
