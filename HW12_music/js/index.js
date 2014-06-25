@@ -233,7 +233,7 @@ function counttime(time){
     return result;
 }
 function displaylrc(){
-   var inter = 10; 
+   var inter = 5; 
    setInterval(checkifnextline, inter);
 }
 function checkifnextline(){
