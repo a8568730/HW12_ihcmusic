@@ -26,7 +26,7 @@ $(document).ready(function(){
 	var wrapper = $("#wrapper");
 	
 	togglesign();
-	gotolist(view, wrapper);
+	gotolist(view, wrapper);//json
 	//gotolyrics(view, wrapper,1);
 	backtoprev(view, wrapper);
 	
@@ -48,7 +48,7 @@ function gotolist(view ,wrapper){
 		var w = view.width();
 		//phone, pad
 		if(w < 769)
-			wrapper.css("top", "-=" + h);
+			wrapper.css("top", -h);
 
 		//music type as title in page2
 		var title = $(this).find(".title").text();
@@ -114,6 +114,11 @@ function playicon(page2){
 
 function rewin(){
 	//$("div[id^='page']")
+	var medium = 481;
+	var large = 789;
+	var prev_size = window.innerWidth;
+	var prev_page = 1;
+	
 	$(window).bind("load resize",function(){
 		var w = window.innerWidth; 
 		var h = window.innerHeight; 
@@ -126,7 +131,17 @@ function rewin(){
 		var h_view = h - h_head;
 		view.height(h_view);
 		$("div[id^='page']").height(h_view);
-		*/	});
+		*/	
+		//var top_now = parseInt($("#window").find("#wrapper").css('top'),10);
+		//if phone -> pad
+		if( w >= medium && w < large ){
+			if( w > prev_size && prev_size < medium ){
+				if( prev_page == 3 ){
+					prev_page = 2;
+				}
+			}
+		}}
+	});
 }
 
 
