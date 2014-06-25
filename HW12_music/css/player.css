@@ -113,6 +113,13 @@ button{outline:none;}
 	    background:radial-gradient(#777,#333);
 	}
 }
+@media only screen and (min-width: 601px) {
+	.song {
+	    width:150px;
+	    height:200px;
+	    margin:15px;
+	}
+}
 @media only screen and (min-width: 769px) {
 	/*.song {
 		float:left;
