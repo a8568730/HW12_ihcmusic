@@ -78,14 +78,15 @@ function gotolyrics(view ,wrapper,num){
 	else{
 		$("#page2").find(".player").on("click",function(){
 			var parent = $(this).closest('.song');
-			var name = parent.data("song");
+			/*var name = parent.data("song");
 			var mp3 = parent.data("mp3");
 			var lyric = parent.data("lrc")
 			
 			$("#page3").find("h1").text(name);
 			synclrc(lyric);
 			document.getElementById('cursong').src = mp3;
-			document.getElementById('cursong').play();
+			document.getElementById('cursong').play();*/
+			setmp3lrc(parent);
 		});
 	}
 }
@@ -161,6 +162,17 @@ function getjson(filename){
 		gotolyrics(view, wrapper,2);
 		return false;
 	});
+}
+
+function setmp3lrc(node){
+	var name = node.data("song");
+	var mp3 = node.data("mp3");
+	var lyric = node.data("lrc")
+	
+	$("#page3").find("h1").text(name);
+	synclrc(lyric);
+	document.getElementById('cursong').src = mp3;
+	document.getElementById('cursong').play();
 }
 
 function synclrc(lyric){
