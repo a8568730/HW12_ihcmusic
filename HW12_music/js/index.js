@@ -155,7 +155,7 @@ function resettop(){
 	// pc prev (ok!)
 	prev_page = page;
 	prev_size = w;
-	var move = +$("#head-container").css('height');
+	var move = +$("#head-container").height();
 	move = h - move;
 	
 	//phone now
