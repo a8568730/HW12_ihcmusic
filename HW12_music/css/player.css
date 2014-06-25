@@ -38,9 +38,10 @@ button{outline:none;}
 	    height:200px;
 	    margin:20px;
 	    border:1px solid #555;
-	    padding:15px 15px 5px;
+	    padding:15px 15px 7px;
 	    background:#333;
 	    text-align:center;
+	    overflow:hidden;
 	}
 	.song:hover {
 		background:#333;
@@ -58,6 +59,10 @@ button{outline:none;}
 		font-size:.85em;
 		font-weight:100;
 		color:#977908;
+	}
+	.song h3{font-size:.8em;}
+	.song h4{
+		font-size:.7em;
 	}
 	.cover{
 		display:block;
@@ -121,8 +126,8 @@ button{outline:none;}
 	}
 	*/
 	.song{
-	    width:250px;
-	    height:300px;
+	    width:200px;
+	    height:250px;
 	    margin:20px;
 	    padding:15px 15px 5px;
 	}
@@ -131,12 +136,13 @@ button{outline:none;}
 	    text-indent:1em;
 	    line-height:2em;
 	}
+	.song h3{font-size:.8em;}
 	.song h4{
-		font-size:.8em;
+		font-size:.7em;
 	}
 	.cover{
 		width:84%;
-		height:70%;
+		height:62%;
 		margin-bottom:20px;
 	}
 	.play-btn{
