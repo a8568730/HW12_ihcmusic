@@ -35,6 +35,7 @@ $(document).ready(function(){
 
 
 function togglesign(){
+	//phone, pad: toggle sign-up and sign-in
 	$("#ss-container").find("#sign-btn").on('click',function(){
 		$(this).toggleClass("btn-active");
 		var signcontain = $("#sign-group");
@@ -45,6 +46,7 @@ function gotolist(view ,wrapper){
 	$("#page1-nav").find("a").on('click',function(){
 		var h = view.height();
 		var w = view.width();
+		//phone, pad
 		if(w < 769)
 			wrapper.css("top", "-=" + h);
 
@@ -63,13 +65,17 @@ function gotolist(view ,wrapper){
 function gotolyrics(view ,wrapper,num){
 	var h = view.height();
 	var w = view.width();
+	
+	//phone: click on song
 	if(w<481){
 		$("#page2").find(".song").on("click",function(){
 			wrapper.css("top", "-=" + (h-1));
 			setmp3lrc($(this));
 		});
 	}
+	//pad, pc: click on covers
 	else{
+		  
 		$("#page2").find(".player").on("click",function(){
 			var parent = $(this).closest('.song');
 			setmp3lrc(parent);
@@ -144,7 +150,7 @@ function getjson(filename){
 		var view = $("#window");
 		var wrapper = $("#wrapper");
 		
-		//gotolyric event works only after loading json finishment 
+		//gotolyric event only works after loading json finishment 
 		gotolyrics(view, wrapper,2);
 		return false;
 	});
@@ -156,7 +162,9 @@ function setmp3lrc(node){
 	var lyric = node.data("lrc")
 	
 	$("#page3").find("h1").text(name);
+	
 	synclrc(lyric);
+	
 	document.getElementById('cursong').src = mp3;
 	document.getElementById('cursong').play();
 }
@@ -172,8 +180,7 @@ function synclrc(lyric){
 
 function loadlrc(filename){
 	
-	//alert('0, filename: ' + filename);
-	
+	//alert('0, filename: ' + filename); 
 	$.get(filename, {}, function(txt){
 		
 		/*for (i = 0 ; i < lines.length ; i++) {
@@ -202,8 +209,10 @@ function appendlrc(txt){
         
         if(time){
             if(time[0]>='0' &&  time[0]<='9'){
-	            record = counttime(time);
-	            prevtime = record;
+	            //transform time string to integer
+            	record = counttime(time);
+	            //refresh previous end time
+            	prevtime = record;
             }
             else return;
         }
