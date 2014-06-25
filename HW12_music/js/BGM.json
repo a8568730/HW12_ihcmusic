@@ -1,0 +1,18 @@
+[
+	{
+		"index":"BGM1",
+		"name":"Aqua Timez - 決意の朝",
+		"cover":"images/auqa.jpg",
+		"like":"104523",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/BGM/Aqua Timez - 決意の朝.mp3",
+		"lrc":""
+	},
+	{
+		"index":"BGM2",
+		"name":"Madonna - Miles Away",
+		"cover":"images/Madana_miles.gif",
+		"like":"104523",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/BGM/Madonna - Miles Away.mp3",
+		"lrc":""
+	}
+]
