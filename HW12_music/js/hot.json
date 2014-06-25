@@ -1,0 +1,18 @@
+[
+	{
+		"index":"hot1",
+		"name":"マルマルモリモリ",
+		"cover":"images/marumaru_cover.jpg",
+		"like":"104523",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/hot/マルマルモリモリ.mp3",
+		"lrc":""
+	},
+	{
+		"index":"hot1",
+		"name":"Mraz-I'm Yours",
+		"cover":"images/mraz_cover.jpg",
+		"like":"104523",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/hot/Jason Mraz-I'm Yours.mp3",
+		"lrc":""
+	}
+]
