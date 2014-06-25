@@ -8,11 +8,115 @@
 		"lrc":""
 	},
 	{
+		"index":"guitar2",
+		"name":"James",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/02 Isn't She Lovely.wma",
+		"lrc":""
+	},
+	{
 		"index":"guitar3",
 		"name":"James",
 		"cover":"images/Acousphere_cover.jpg",
 		"like":"20478",
 		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/03 James.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar4",
+		"name":"Love to be loved",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/04 Love To Be Loved.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar5",
+		"name":"You're Beautiful",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/05 You're Beautiful.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar6",
+		"name":"Take You Home",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/06 Take You Home.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar7",
+		"name":"My Life",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/07 My Life.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar8",
+		"name":"Beautiful Name",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/08 Beautiful Name.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar9",
+		"name":"Heal The World",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/09 Heal The World.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar10",
+		"name":"Dance With Me",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/10 Dance With Me.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar11",
+		"name":"Time After Time",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/11 Time After Time.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar12",
+		"name":"Someday",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/12 Someday My Prince Will Come.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar13",
+		"name":"L.O.V.E",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/13 L. O. V. E.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar14",
+		"name":"I'm Glad To See You",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/14 I'm Glad To See You.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar15",
+		"name":"Blackbird",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/15 Blackbird.wma",
 		"lrc":""
 	}
 ]
