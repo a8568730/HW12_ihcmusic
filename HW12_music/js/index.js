@@ -93,6 +93,12 @@ function backtoprev(view, wrapper){
 	});
 }
 
+function SHOWTOP(){
+	var w = window.innerWidth; 
+	var h = window.innerHeight; 
+	var top = parseInt($("#window").find("#wrapper").css('top'),10);
+	$("body").find("span:first").text("size: " + w + "_" + h + ' top: ' + top);
+}
 
 function playicon(page2){
 	page2.find("#songlist").on('click','.player',function(){
@@ -112,8 +118,7 @@ function rewin(){
 		var w = window.innerWidth; 
 		var h = window.innerHeight; 
 		
-		$("body").find("span:first").text("size: " + w + "," + h);
-		
+		SHOWTOP();
 		//$("#window").height(h);
 		//$("div[id^='page']")
 		/*var view = $("#window");   
