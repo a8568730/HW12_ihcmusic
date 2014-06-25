@@ -45,9 +45,10 @@ function gotolist(view, wrapper) {
 		var h = view.height();
 		var w = view.width();
 		// phone, pad
-		
-		if (w < 769)
-			wrapper.css("top", -h);
+		prev_page = 2;
+		resettop();
+//		if (w < 769)
+//			wrapper.css("top", -h);
 
 		// music type as title in page2
 		var title = $(this).find(".title").text();
@@ -69,13 +70,15 @@ function gotolyrics(view, wrapper, num) {
 	// phone: click on song
 	if (w < 481) {
 		$("#page2").find(".song").on("click", function() {
-			wrapper.css("top", "-=" + (h - 1));
+//			wrapper.css("top", "-=" + (h - 1));
+			prev_page = 3;
+			resettop();
+			
 			setmp3lrc($(this));
 		});
 	}
 	// pad, pc: click on covers
 	else {
-
 		$("#page2").find(".player").on("click", function() {
 			var parent = $(this).closest('.song');
 			setmp3lrc(parent);
@@ -86,7 +89,9 @@ function gotolyrics(view, wrapper, num) {
 function backtoprev(view, wrapper) {
 	$(".return").on('click', function() {
 		var h = view.height();
-		wrapper.css("top", "+=" + h);
+		//wrapper.css("top", "+=" + h);
+		if(prev_page > 1) prev_page-=1;
+		resettop();
 	});
 }
 
@@ -110,68 +115,68 @@ function playicon(page2) {
 
 function rewin() {
 	// $("div[id^='page']")
+	$(window).bind("load resize", resettop);
+}
+function resettop(){
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+
+	SHOWTOP();
+	// $("#window").height(h);
+	// $("div[id^='page']")
+	/*
+	 * var view = $("#window"); var h_head = view.prev().height(); var
+	 * h_view = h - h_head; view.height(h_view);
+	 * $("div[id^='page']").height(h_view);
+	 */
+	// var top_now = parseInt($("#window").find("#wrapper").css('top'),10);
 	var medium = 481;
 	var large = 789;
 	
-	$(window).bind("load resize", function() {
-		var w = window.innerWidth;
-		var h = window.innerHeight;
-
-		SHOWTOP();
-		// $("#window").height(h);
-		// $("div[id^='page']")
-		/*
-		 * var view = $("#window"); var h_head = view.prev().height(); var
-		 * h_view = h - h_head; view.height(h_view);
-		 * $("div[id^='page']").height(h_view);
-		 */
-		// var top_now = parseInt($("#window").find("#wrapper").css('top'),10);
-		var page = prev_page;
-		// phone prev
-		if (prev_size < medium) {
-			// phone to pad
-			if (w > prev_size && w >= medium) {
-				if (prev_page == 3) {
-					page = 2;
-				}
+	var page = prev_page;
+	// phone prev
+	if (prev_size < medium) {
+		// phone to pad
+		if (w > prev_size && w >= medium) {
+			if (prev_page == 3) {
+				page = 2;
 			}
 		}
-		// pad prev
-		else if (prev_size >= medium && prev_size < large) {
-			// pad to pc
-			if (w > prev_size && w >= large) {
-				if (prev_page == 2) {
-					page = 1;
-				}
+	}
+	// pad prev
+	else if (prev_size >= medium && prev_size < large) {
+		// pad to pc
+		if (w > prev_size && w >= large) {
+			if (prev_page == 2) {
+				page = 1;
 			}
 		}
-		// pc prev (ok!)
-		prev_page = page;
-		prev_size = w;
-		var top;
-		//phone now
-		if (w < medium) {
-			if(page == 1)
-				$("#wrapper").css('top',0);
-			else if(page == 2)
-			 	$("#wrapper").css('top',-h);
-			else
-				$("#wrapper").css('top',-2*h);
-			$("#wrapper").css('height','300%');
-		}
-		//pad now
-		else if (w < large) {
-			if(page == 1)
-				$("#wrapper").css('top',0);
-			else
-			 	$("#wrapper").css('top',-h);
-			$("#wrapper").css('height','200%');
-		}
-		else{
+	}
+	// pc prev (ok!)
+	prev_page = page;
+	prev_size = w;
+	var move = +$("#head-container").css('height');
+	move = h - move;
+	
+	//phone now
+	if (w < medium) {
+		if(page == 1)
 			$("#wrapper").css('top',0);
-			$("#wrapper").css('height','100%');
-		}	
-	});
+		else if(page == 2)
+		 	$("#wrapper").css('top',-move);
+		else
+			$("#wrapper").css('top',-2*move);
+	}
+	//pad now
+	else if (w < large) {
+		if(page == 1)
+			$("#wrapper").css('top',0);
+		else
+		 	$("#wrapper").css('top',-move);
+	}
+	else{
+		$("#wrapper").css('top',0);
+	}	
 }
 
 function getjson(filename) {
