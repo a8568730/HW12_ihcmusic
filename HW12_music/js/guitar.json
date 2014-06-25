@@ -1,0 +1,18 @@
+[
+	{
+		"index":"guitar1",
+		"name":"Daydream Believer",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/01 Daydream Believer.wma",
+		"lrc":""
+	},
+	{
+		"index":"guitar3",
+		"name":"James",
+		"cover":"images/Acousphere_cover.jpg",
+		"like":"20478",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/guitar/03 James.wma",
+		"lrc":""
+	}
+]
