@@ -54,7 +54,7 @@ function gotolist(view ,wrapper){
 		var title = $(this).find(".title").text();
 		$("#page2").find("h1").text(title);
 		
-		//get and load the music json file
+		//get *.json list
 		var jlist = 'js/' + $(this).data('type') + '.json';
 		getjson(jlist);
 		
@@ -62,6 +62,8 @@ function gotolist(view ,wrapper){
 		playicon($("#page2"));
 	});
 };
+
+
 function gotolyrics(view ,wrapper,num){
 	var h = view.height();
 	var w = view.width();
@@ -82,12 +84,15 @@ function gotolyrics(view ,wrapper,num){
 		});
 	}
 }
+
+
 function backtoprev(view, wrapper){
 	$(".return").on('click',function(){
 		var h = view.height();
 		wrapper.css("top", "+=" + h);
 	});
 }
+
 
 function playicon(page2){
 	page2.find("#songlist").on('click','.player',function(){
@@ -99,6 +104,8 @@ function playicon(page2){
 		//$(this).find('.play-btn').toggleClass("btn-play");
 	});
 }
+
+
 function rewin(){
 	//$("div[id^='page']")
 	$(window).bind("load resize",function(){
@@ -115,18 +122,9 @@ function rewin(){
 		view.height(h_view);
 		$("div[id^='page']").height(h_view);
 		*/	});
-
 }
-/*
-function getcon(type){
-	switch (type){
-		case 'hot':break;
-		case 'j-pop':
-		case 'guitar':
-		case 'BGM':
-		case 'radio':
-	}
-}*/
+
+
 function getjson(filename){
 	$.getJSON(filename, function(data){
 		var songlist = $("#page2").find("#songlist");
@@ -156,6 +154,7 @@ function getjson(filename){
 	});
 }
 
+
 function setmp3lrc(node){
 	var name = node.data("song");
 	var mp3 = node.data("mp3");
@@ -179,20 +178,11 @@ function synclrc(lyric){
 }
 
 function loadlrc(filename){
-	
-	//alert('0, filename: ' + filename); 
 	$.get(filename, {}, function(txt){
-		
-		/*for (i = 0 ; i < lines.length ; i++) {
-			var tt = $('<p>').text(lines[i]); 
-			$("#page3").find("#lyrics").append(tt);
-		}*/
 		//append to #lyric
 		appendlrc(txt);
-
 	},'html');
 }
-
 
 function appendlrc(txt){
 	var area = $("#page3").find("#lyrics");
@@ -232,6 +222,7 @@ function appendlrc(txt){
     }).last();
     firstline.addClass('highlight');
 }
+
 function counttime(time){
     var arr = time.split(':');
     var min = +arr[0];
@@ -239,10 +230,12 @@ function counttime(time){
     var result = min*60 + sec;
     return result;
 }
+
 function displaylrc(){
    var inter = 5; 
    setInterval(checkifnextline, inter);
 }
+
 function checkifnextline(){
     var myVid=document.getElementById("cursong");
     var current = myVid.currentTime;
@@ -253,6 +246,7 @@ function checkifnextline(){
     	nextline();
     }
 }
+
 function nextline(){
 	var area = $("#page3").find("#lyrics");
 	var count = +area.find('p').length;
