@@ -4,7 +4,7 @@
 		"name":"SMAP-Just Go",
 		"cover":"images/Gift_200x200.jpg",
 		"like":"44500",
-		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/02.Just Go!.mp3",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/jpop/02.Just Go!.mp3",
 		"lrc":"lyrics/Just Go!_copy.lrc"
 	},
 	{
@@ -12,7 +12,7 @@
 		"name":"SMAP-Secial Thanks",
 		"cover":"images/Gift_200x200.jpg",
 		"like":"41210",
-		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/03.Special Thanks.mp3",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/jpop/03.Special Thanks.mp3",
 		"lrc":"lyrics/test.lrc"
 	},
 	{
@@ -20,7 +20,7 @@
 		"name":"SMAP-さかさまの空",
 		"cover":"images/Gift_200x200.jpg",
 		"like":"40015",
-		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/03.さかさまの空.mp3",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/jpop/03.さかさまの空.mp3",
 		"lrc":"lyrics/test.lrc"
 	},
 	{
@@ -28,7 +28,7 @@
 		"name":"SMAP-Gift",
 		"cover":"images/Gift_200x200.jpg",
 		"like":"60972",
-		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/07.gift.mp3",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/jpop/07.gift.mp3",
 		"lrc":"lyrics/test.lrc"
 	},
 	{
@@ -36,7 +36,7 @@
 		"name":"SMAP-Moment",
 		"cover":"images/Moment.jpg",
 		"like":"104523",
-		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/Moment.mp3",
+		"mp3":"http://nol.cs.nctu.edu.tw/~wltsai/mp3/jpop/Moment.mp3",
 		"lrc":"lyrics/test.lrc"
 	}
 ]
