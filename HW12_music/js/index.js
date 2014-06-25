@@ -214,7 +214,16 @@ function appendlrc(txt){
         
         p.prependTo(area);
     });
-    area.find('p:first-child').addClass('highlight');
+    
+    //Skip the first multiple '\n':
+    //keypoint: next lyric has same time attr as breakline
+    //1. get the breakline's time
+    //2. find the next lyric under breakline
+    var firstime = +area.find('p:first-child').data("time");
+    var firstline = area.find('p').filter(function(){
+        return +$(this).data('time') == firstime;
+    }).last();
+    firstline.addClass('highlight');
 }
 function counttime(time){
     var arr = time.split(':');
@@ -233,8 +242,8 @@ function checkifnextline(){
     
     var area = $("#page3").find("#lyrics");
     var highlight = +area.find('p.highlight').data('time');
-    if(current > highlight) {
-        nextline();
+    if(current >= highlight) {
+    	nextline();
     }
 }
 function nextline(){
@@ -244,7 +253,16 @@ function nextline(){
     var index = p_now.index();
     
     if(index < (count-1)){
+        
+    	//Skip the first multiple '\n':
+        //keypoint: next lyric has same time attr as breakline
         var p_next = p_now.next();
+        var nexttime = p_next.data('time');
+        
+        p_next = p_now.nextAll().filter(function(){
+            return $(this).data('time') == nexttime;
+        }).last();
+        
         if(p_next[0].tagName == "P"){
             p_now.removeClass('highlight');
             p_next.addClass('highlight');
